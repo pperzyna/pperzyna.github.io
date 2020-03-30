@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "pperzyna"
+license = "MIT"
+licenselink = "https://github.com/pperzyna/pperzyna.com"
+description = ""
+homepage = "https://pperzyna.com/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Piotr Perzyna"
+  homepage = "https://pperzyna.com/"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

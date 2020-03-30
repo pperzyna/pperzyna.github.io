@@ -1,0 +1,4 @@
+baseURL = "https://pperzyna.com/"
+languageCode = "en-us"
+title = "Piotr Perzyna"
+theme = "pperzyna"
