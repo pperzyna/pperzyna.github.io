@@ -1,0 +1,2 @@
+{{- $script := resources.Get "js/page-scroll.js" -}} {{- $scripts := $script | minify | fingerprint -}}
+<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>

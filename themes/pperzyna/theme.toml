@@ -6,16 +6,10 @@ license = "MIT"
 licenselink = "https://github.com/pperzyna/pperzyna.com"
 description = ""
 homepage = "https://pperzyna.com/"
-tags = []
-features = []
-min_version = "0.41"
+tags = ["website", "starter", "responsive", "Disqus", "blog", "Tachyons", "Multilingual", "Stackbit"]
+features = ["posts", "shortcodes", "related content", "comments"]
+min_version = "0.54.0"
 
 [author]
   name = "Piotr Perzyna"
   homepage = "https://pperzyna.com/"
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""

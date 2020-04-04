@@ -1,0 +1,62 @@
+{{ define "main" }}
+<section class="post has-border-top--muted">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-offset-1 is-10">
+        <nav class="breadcrumb mt-4 mb-2" aria-label="breadcrumbs">
+          <ul>
+            <li>
+              <a href="{{ .Site.BaseURL }}/" title="pperzyna.com"><span class="iconify" data-icon="bx:bx-home-heart" data-inline="false"></span> &nbsp; </a>
+            </li>
+            <li><a href="{{ .Site.BaseURL }}/blog" href="Blog">Blog</a></li>
+            <li><a href="{{ .Permalink }}" class="is-active" aria-current="page">{{ .Title }} </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-offset-2 is-8">
+        <h1 class="title is-size-3 has-border-bottom--success mt-2">{{ .Title }}</h1>
+        {{ if .Summary }}
+        <div class="is-size-4">
+          {{ .Summary }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="columns is-vcentered">
+      <div class="column is-offset-2 is-4">
+        <div class="date">
+          <span class="iconify" data-icon="et:calendar" data-inline="false"></span>
+          <time datetime="2016-1-1">{{ (time .Page.Date).Format "January 2, 2006" }}</time>
+        </div>
+      </div>
+      <div class="column is-4 has-text-right">
+        {{ partial "page-share.html" . }}
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column is-offset-1 is-10 photo">
+        <figure class="image is-2by1 has-text-centered">
+          <img src="{{ .Page.Params.photo }}" alt="{{ .Title }}" />
+        </figure>
+      </div>
+    </div>
+
+    <div class="columns is-multiline mt-4 content">
+      <div class="column is-offset-2 is-8 is-size-5">
+        {{ $body := replace .Content .Summary "" }} {{ $body | emojify | safeHTML }}
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+<div id="_progress"></div>
+{{ partial "page-scroll.html" . }}
+{{ end }}

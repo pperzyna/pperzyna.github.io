@@ -1,4 +1,6 @@
 baseURL = "https://pperzyna.com/"
-languageCode = "en-us"
+languageCode = "en"
 title = "Piotr Perzyna"
 theme = "pperzyna"
+
+enableRobotsTXT = true

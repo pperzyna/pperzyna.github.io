@@ -1,0 +1,92 @@
+{{ define "header" }}
+<section class="hero hero-main is-fullheight is-paddingless">
+  <div class="hero-header">
+    {{ partial "site-header.html" .}}
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column has-text-centered">
+          <div class="mb-2">
+            <img src="/img/piotrperzyna.jpg" />
+          </div>
+          <h2 class="title has-border-bottom--success">
+            {{ partial "svg/piotrperzyna.svg" (dict "size" 35 ) }}
+          </h2>
+          <h1 class="subtitle has-text-primary mt-0">
+            Cloud Native Architect &nbsp; &nbsp; DevOps Consultant
+          </h1>
+          {{ partial "page-social.html" . }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-foot">
+    <div class="stamp">
+      <a href="#whoami">
+        <span class="iconify" data-icon="entypo:chevron-down" data-inline="false"></span>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "main" }}
+<section class="mt-4">
+  <div class="container">
+    <div class="section-header" id="whoami">
+      <div class="header has-text-centered">
+        <h2 class="title has-border-bottom--success is-4">where you can find me</h2>
+      </div>
+    </div>
+    <div class="platforms">
+      <div class="columns is-centered">
+        <!-- 
+        <div class="column">
+          <div class="platform">
+            <a href="/lectures">
+              <div class="icons">
+                <span class="iconify" data-icon="uil:microphone" data-inline="false"></span>
+              </div>
+              <span>Lectures</span>
+            </a>
+          </div>
+        </div>
+        -->
+        <div class="column is-3">
+          <div class="platform">
+            <a href="/workshops">
+              <div class="icons">
+                <span class="iconify" data-icon="mdi:head-cog-outline" data-inline="false"></span>
+              </div>
+              <span>Workshops</span>
+            </a>
+          </div>
+        </div>
+        <div class="column is-3">
+          <div class="platform">
+            <a href="/open-source">
+              <div class="icons">
+                <span class="iconify" data-icon="cib:open-source-initiative" data-inline="false"></span>
+              </div>
+              <span>Open Source</span>
+            </a>
+          </div>
+        </div>
+        <!--
+        <div class="column">
+          <div class="platform">
+            <a href="#">
+              <div class="icons">
+                <span class="iconify" data-icon="jam:cogs" data-inline="false"></span>
+              </div>
+              <span>Workshops</span>
+            </a>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

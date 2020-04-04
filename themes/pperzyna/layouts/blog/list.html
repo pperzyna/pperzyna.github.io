@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<section class="hero is-muted">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        blog
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="blog pt-3 pb-5">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-two-thirds ">
+        <div class="section-header">
+          <div class="header has-border-bottom--muted mb-2">
+            <h2 class="title has-border-bottom--success is-4">latest articles</h2>
+          </div>
+        </div>
+
+        <div class="columns">
+          {{ range after 2 .Paginator.Pages }}
+          <div class="column is-half">
+            {{ .Render "list-item" }}
+          </div>
+          {{ end }}
+
+          {{ .Content }}
+          {{ template "_internal/pagination.html" . }}
+        </div>
+      </div>
+      <div class="column is-one-thirds"></div>
+    </div>
+  </div>
+</section>
+{{ end }}
