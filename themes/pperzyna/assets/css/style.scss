@@ -50,6 +50,10 @@ time {
   padding-bottom: 0px !important;
 }
 
+.pt-0 {
+  padding-top: 0px !important;
+}
+
 .pt-3 {
   padding-top: 30px !important;
 }
@@ -133,12 +137,6 @@ time {
 .workshop-demand {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.post h1.title {
-  display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .post .breadcrumb {
@@ -528,7 +526,10 @@ ul.categories {
     .card-footer {
       display: none;
     }
+  }
 
+  .card-equal-height .card-content {
+    min-height: 50px !important;
   }
 
   .opensource {
@@ -539,6 +540,12 @@ ul.categories {
       }
     }
   }
+
+  .title {
+    font-size: 1.75rem !important;
+    ;
+  }
+
 
   .hero-main h1 span {
     display: block;
