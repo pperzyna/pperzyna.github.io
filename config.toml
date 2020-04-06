@@ -4,3 +4,13 @@ title = "Piotr Perzyna"
 theme = "pperzyna"
 
 enableRobotsTXT = true
+
+[taxonomies]
+  category = "categories"
+#  series = "series"
+#  tag = "tags"
+
+[outputs]
+#        ["HTML", "AMP", "RSS"]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "RSS"] 

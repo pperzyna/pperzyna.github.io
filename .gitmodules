@@ -1,3 +1,7 @@
 [submodule "vendor/bulma"]
 	path = vendor/bulma
 	url = git@github.com:jgthms/bulma.git
+[submodule "public"]
+	path = public
+	url = git@github.com:pperzyna/pperzyna.github.io.git
+	branch = master

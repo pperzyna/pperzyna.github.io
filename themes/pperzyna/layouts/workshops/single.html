@@ -18,8 +18,13 @@
     <div class="columns">
       <div class="column photo is-offset-1 is-4">
         <figure class="image is-2by1 has-text-centered img">
-          <img src="{{ .Page.Params.workshop.photo }}" alt="{{ .Title }}" />
+          <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
         </figure>
+        {{ if .Page.Params.photo.credits }}
+        <div class="credits mt-1 has-text-centered">
+          {{ .Page.Params.photo.credits | safeHTML }}
+        </div>
+        {{ end }}
       </div>
       <div class="column header is-6 has-text-centered">
         <h1 class="title is-size-3 has-border-bottom--success mt-3">{{ .Title }}</h1>

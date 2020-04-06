@@ -12,27 +12,72 @@
 
 <section class="blog pt-3 pb-5">
   <div class="container">
-    <div class="columns">
-      <div class="column is-two-thirds ">
+    <div class="columns ">
+      <div class="column is-8 ">
         <div class="section-header">
           <div class="header has-border-bottom--muted mb-2">
             <h2 class="title has-border-bottom--success is-4">latest articles</h2>
           </div>
         </div>
-
-        <div class="columns">
-          {{ range after 2 .Paginator.Pages }}
+        <div class="columns blog-last">
+          {{ range first 2 .Pages }}
           <div class="column is-half">
             {{ .Render "list-item" }}
           </div>
           {{ end }}
-
           {{ .Content }}
-          {{ template "_internal/pagination.html" . }}
         </div>
+        {{if gt (len .Pages) 2}}
+        <div class="section-header">
+          <div class="header has-border-bottom--muted mb-2">
+            <h2 class="title has-border-bottom--success is-4">older articles</h2>
+          </div>
+        </div>
+        <div class="columns is-multiline blog-olded">
+          {{ $paginator := .Paginate (after 2 .Pages) 6 }}
+          {{ range .Paginator.Pages }}
+          <div class="column is-4">
+            {{ .Render "list-item" }}
+          </div>
+          {{ end }}
+        </div>
+        <div class="mt-4">{{ partial "pagination.html" . }}</div>
+        {{ end }}
       </div>
-      <div class="column is-one-thirds"></div>
+      <div class="column is-3 is-offset-1">
+        <div class="section-header">
+          <div class="header has-border-bottom--muted mb-2">
+            <h2 class="title has-border-bottom--success is-4">categories</h2>
+          </div>
+        </div>
+        <div>
+          <ul class="categories ml-4">
+            {{ range $key, $value := .Site.Taxonomies.categories }}
+            <li><a href="/categories/{{ $key | urlize }}">{{ $key | humanize }}</a> <small>({{ len $value }})</small></li>
+            {{ end }}
+          </ul>
+        </div>
+
+        {{ range first 1 (where .Site.Pages ".Params.workshop.past" false) }}
+        <div class="box is-muted has-text-centered mt-4">
+          <h3 class="title is-size-4 ">upcoming workshops</h3>
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img src="{{ .Page.Params.photo.source }}" class="is-rounded" alt="{{ .Page.Title }}">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content has-text-centered">
+                <a href="{{ .Page.Permalink }}" title="{{ .Page.Title }}">{{ .Page.Title }}</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        {{end }}
+
+      </div>
+      </div>
     </div>
-  </div>
 </section>
 {{ end }}

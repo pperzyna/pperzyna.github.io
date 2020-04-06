@@ -1,21 +1,18 @@
-<div class="card blog_item">
-  <div class="card-image">
+<div class="card card-equal-height blog_item">
+  <header class="card-image">
     <a href="{{ .Permalink }}" class="blog_img" title="{{ .Title }}">
       <figure class="image is-2by1">
-        <img src="{{ .Page.Params.workshop.photo }}" alt="{{ .Title }}" />
+        <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
       </figure>
     </a>
-  </div>
-  <div class="card-content">
+  </header>
+  <div class="card-content pb-0">
     <a href="{{ .Permalink }}" class="title" title="{{ .Title }}">{{ .Title }}</a>
-    <div class="columns ">
-      <div class="column is-7 has-text-left date">
-        <span class="iconify" data-icon="et:calendar" data-inline="false"></span>
-        <time datetime="2016-1-1">{{ (time .Page.Params.workshop.date).Format "January 2, 2006" }}</time>
-      </div>
-      <div class="column is-5 has-text-right explore">
-        <a href="{{ .Permalink }}" class="explore_btn " title="{{ .Title }}">explore more</a>
-      </div>
-    </div>
   </div>
+  <footer class="card-footer is-borderless">
+    <div class="card-footer-item is-borderless date"><span class="iconify" data-icon="et:calendar" data-inline="false"></span>
+      <time datetime="2016-1-1">{{ (time .Page.Params.workshop.date).Format "January 2, 2006" }}</time>
+    </div>
+    <a href="{{ .Permalink }}" class="card-footer-item is-borderless explore_btn " title="{{ .Title }}">explore more</a>
+  </footer>
 </div>

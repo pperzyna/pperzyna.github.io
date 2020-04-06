@@ -1,7 +1,7 @@
 {{ define "header" }}
 <section class="hero hero-main is-fullheight is-paddingless">
   <div class="hero-header">
-    {{ partial "site-header.html" .}}
+    {{ partial "page-header.html" .}}
   </div>
   <div class="hero-body">
     <div class="container">
@@ -14,7 +14,7 @@
             {{ partial "svg/piotrperzyna.svg" (dict "size" 35 ) }}
           </h2>
           <h1 class="subtitle has-text-primary mt-0">
-            Cloud Native Architect &nbsp; &nbsp; DevOps Consultant
+            <span>Cloud Native Architect</span> <span>DevOps Consultant</span>
           </h1>
           {{ partial "page-social.html" . }}
         </div>

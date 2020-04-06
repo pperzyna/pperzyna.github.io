@@ -16,10 +16,10 @@
     </div>
 
     <div class="columns">
-      <div class="column is-offset-2 is-8">
-        <h1 class="title is-size-3 has-border-bottom--success mt-2">{{ .Title }}</h1>
+      <div class="column is-offset-2 is-8 has-text-centered">
+        <h1 class="title is-size-1 has-border-bottom--success mt-2">{{ .Title }}</h1>
         {{ if .Summary }}
-        <div class="is-size-4">
+        <div class="is-size-4 has-text-justify has-text-indent">
           {{ .Summary }}
         </div>
         {{ end }}
@@ -39,10 +39,16 @@
     </div>
 
     <div class="columns">
-      <div class="column is-offset-1 is-10 photo">
-        <figure class="image is-2by1 has-text-centered">
-          <img src="{{ .Page.Params.photo }}" alt="{{ .Title }}" />
+      <div class="column is-offset-3 is-6 photo">
+        <figure class="image is-16by9 has-text-centered">
+          <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
         </figure>
+
+        {{ if .Page.Params.photo.credits }}
+        <div class="credits mt-1 has-text-centered">
+          {{ .Page.Params.photo.credits | safeHTML }}
+        </div>
+        {{ end }}
       </div>
     </div>
 
