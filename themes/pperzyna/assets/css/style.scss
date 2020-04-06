@@ -480,6 +480,7 @@ ul.categories {
   .breadcrumb a.is-active {
     overflow: hidden;
     max-width: 150px;
+    display: inline;
     white-space: nowrap;
     text-overflow: ellipsis;
     justify-content: normal;

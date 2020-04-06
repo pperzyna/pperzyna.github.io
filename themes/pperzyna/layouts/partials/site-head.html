@@ -4,9 +4,9 @@
 
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
-<meta property="og:description" content="In the early days, Twitter grew so quickly that it was almost impossible to add new features because engineers spent their time trying to keep the rocket ship from stalling." />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
 {{ if .Page.Params.photo.source }}
 <meta property="og:image" content="{{ absURL .Page.Params.photo.source }}" />
