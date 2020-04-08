@@ -13,7 +13,8 @@
     <a href="{{ .Permalink }}" class="title" title="{{ .Title }}">{{ .Title }}</a>
   </div>
   <footer class="card-footer is-borderless">
-    <div class="card-footer-item is-borderless date"><span class="iconify" data-icon="et:calendar" data-inline="false"></span>
+    <div class="card-footer-item is-borderless date">
+      {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
       <time datetime="2016-1-1">{{ .Date.Format "January 2, 2006" }}</time>
     </div>
     <a href="{{ .Permalink }}" class="card-footer-item is-borderless explore_btn " title="{{ .Title }}">read more</a>

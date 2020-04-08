@@ -6,7 +6,9 @@
         <nav class="breadcrumb mt-4 mb-2" aria-label="breadcrumbs">
           <ul>
             <li>
-              <a href="{{ .Site.BaseURL }}/" title="pperzyna.com"><span class="iconify" data-icon="bx:bx-home-heart" data-inline="false"></span> &nbsp; </a>
+              <a href="{{ .Site.BaseURL }}/" title="pperzyna.com">
+                {{ partial "svg/home.svg" (dict "size" 18 ) }}
+              </a>
             </li>
             <li><a href="{{ .Site.BaseURL }}/workshops" href="Workshops">Workshops</a></li>
             <li><a href="{{ .Permalink }}" class="is-active" aria-current="page">{{ .Title }} </a></li>
@@ -32,17 +34,17 @@
         <div class="columns">
           <div class="column is-offset-1 is-6 has-text-left">
             <div class="date">
-              <span class="iconify" data-icon="et:calendar" data-inline="false"></span>
+              {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
               <time datetime="2016-1-1">{{ (time .Page.Params.workshop.date).Format "January 2, 2006" }}</time>
             </div>
             <div class="place">
               {{ if .Page.Params.workshop.place.link }}
               <a href="{{ .Page.Params.workshop.place.link }}" target="_blank">
-                <span class="iconify" data-icon="whh:placeios" data-inline="false"></span>
+                {{ partial "svg/location.svg" (dict "size" 14 ) }}
                 {{ .Page.Params.workshop.place.name }}
               </a>
               {{ else }}
-              <span class="iconify" data-icon="whh:placeios" data-inline="false"></span>
+              {{ partial "svg/location.svg" (dict "size" 14 ) }}
               {{ .Page.Params.workshop.place.name }}
               {{ end }}
             </div>

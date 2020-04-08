@@ -154,6 +154,10 @@ time {
   font-size: 1rem;
 }
 
+.breadcrumb svg {
+  fill: $primary;
+}
+
 .post .img {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -226,7 +230,7 @@ time {
 
 .place svg,
 .date svg {
-  color: $primary;
+  fill: $primary;
 }
 
 .place svg,
@@ -289,8 +293,7 @@ time {
 }
 
 .hero-main .hero-foot svg {
-  font-size: 90px;
-  color: $success;
+  fill: $success;
   animation: float-bob-y infinite 2s linear;
 }
 
@@ -608,6 +611,10 @@ input,
 }
 
 /* global */
+
+#_share a {
+  padding: 5px;
+}
 
 #_share a svg {
   fill: $success;

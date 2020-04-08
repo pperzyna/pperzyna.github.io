@@ -6,7 +6,9 @@
         <nav class="breadcrumb mt-4 mb-4" aria-label="breadcrumbs">
           <ul>
             <li>
-              <a href="{{ .Site.BaseURL }}/" title="pperzyna.com"><span class="iconify" data-icon="bx:bx-home-heart" data-inline="false"></span> &nbsp; </a>
+              <a href="{{ .Site.BaseURL }}/" title="pperzyna.com">
+                {{ partial "svg/home.svg" (dict "size" 18 ) }}
+              </a>
             </li>
             <li><a href="{{ .Site.BaseURL }}/blog" href="Blog">Blog</a></li>
             <li><a href="{{ .Permalink }}" class="is-active" aria-current="page">{{ .Title }} </a></li>
@@ -21,7 +23,7 @@
         <div class="columns is-mobile is-vcentered">
           <div class="column is-6 has-text-left">
             <div class="date">
-              <span class="iconify" data-icon="et:calendar" data-inline="false"></span>
+              {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
               <time datetime="2016-1-1">{{ (time .Page.Date).Format "January 2, 2006" }}</time>
             </div>
           </div>

@@ -17,7 +17,6 @@
   {{- $style := $all | toCSS | minify | fingerprint -}}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
 
-  <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
   {{- if .OutputFormats.Get "RSS" -}}
   {{- with .OutputFormats.Get "RSS" -}}
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
