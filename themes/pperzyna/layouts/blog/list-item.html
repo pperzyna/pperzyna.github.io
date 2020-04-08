@@ -2,7 +2,7 @@
   <header class="card-image">
     <a href="{{ .Permalink }}" class="blog_img" title="{{ .Title }}">
       <figure class="image is-2by1">
-        <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
+        <img src="{{ .Page.Params.photo.source }}?nf_resize=smartcrop&w=300&h=400" alt="{{ .Title }}" />
       </figure>
       {{ range first 1 .Page.Params.categories }}
       <span class="category"> {{ . }} </span>

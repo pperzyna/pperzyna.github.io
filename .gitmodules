@@ -1,3 +1,6 @@
 [submodule "vendors/bulma"]
 	path = vendors/bulma
 	url = https://github.com/jgthms/bulma.git
+[submodule "vendors/bulma-carousel"]
+	path = vendors/bulma-carousel
+	url = https://github.com/Wikiki/bulma-carousel.git
