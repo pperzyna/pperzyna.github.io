@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $headlessbundle := .Site.GetPage "/open-source" }}
 
 <section class="hero is-muted">
   <div class="hero-body">
@@ -20,9 +21,9 @@
           </div>
         </div>
         <div class="columns is-multiline">
-          {{ range where .Pages ".Params.opensource.mine" true}}
+          {{ range where ( $headlessbundle.Resources.ByType "page" ) ".Params.opensource.mine" true }}
           <div class="column is-one-third">
-            {{ .Render "list-item" }}
+            {{ .Render "single-item" }}
           </div>
           {{ end }}
         </div>
@@ -34,9 +35,9 @@
           </div>
         </div>
         <div class="columns is-multiline">
-          {{ range where .Pages ".Params.opensource.mine" false}}
+          {{ range where ( $headlessbundle.Resources.ByType "page" ) ".Params.opensource.mine" false }}
           <div class="column is-one-third ">
-            {{ .Render "list-item" }}
+            {{ .Render "single-item" }}
           </div>
           {{ end }}
         </div>

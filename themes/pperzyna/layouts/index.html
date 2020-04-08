@@ -90,3 +90,14 @@
   </div>
 </section>
 {{ end }}
+
+{{ define "head" }}
+{{- $carousel := resources.Get "css/bulma-carousel.sass" -}}
+{{- $style := $carousel | toCSS | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
+{{ end }}
+
+{{ define "scripts" }}
+{{- $script := resources.Get "js/page-scroll.js" -}} {{- $scripts := $script | minify | fingerprint -}}
+<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+{{ end }}

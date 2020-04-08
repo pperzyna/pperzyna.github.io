@@ -1,17 +1,122 @@
 {{ define "main" }}
-<div class="flex-l mt2 mw8 center">
-  <article class="center cf pv5 ph3 ph4-ns mw7">
-    <header>
-      <p class="f6 b helvetica tracked">
-        {{ humanize .Section | upper  }}
-      </p>
-      <h1 class="f1">
-        {{ .Title }}
-      </h1>
-    </header>
-    <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
-      {{ .Content }}
+<section class="mb-4 has-border-top--muted">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+
+        <div class="section-header mt-4 mb-4">
+          <div class="header has-border-bottom--muted has-text-centered2">
+            <h2 class="title has-border-bottom--success is-4">Contact me directly ...</h2>
+          </div>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-5">
+            <div class="box is-activehover">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                      <g>
+                        <path d="M205.1,891C121,827.9,59.8,739.7,29.8,637C-6.8,511.4,7.7,379,70.6,264.3C133.6,149.6,237.4,66.2,363,29.6C622.4-46,894.8,103.5,970.5,362.7c31.7,108.7,24.6,225.8-19.9,329.7c-7.6,17.8-28.2,26-45.9,18.4c-17.7-7.7-26-28.2-18.4-45.9c38.2-89,44.2-189.4,17-282.6C838.5,160.2,605,32,382.6,96.8C274.9,128.2,186,199.6,132,298c-54,98.3-66.4,211.8-35,319.4C161.9,839.8,395.5,967.9,617.8,903c58.2-17,110.8-45.5,156.2-84.8c14.7-12.6,36.8-11,49.4,3.6c12.6,14.6,11,36.7-3.6,49.4c-53.2,45.9-114.5,79.2-182.5,99.1c-125.6,36.6-258,22.1-372.7-40.9C243.7,917.9,223.8,905.1,205.1,891L205.1,891z" />
+                        <path d="M376,344.1l-57.8-44.2c-35.8-27.5-71-15.4-100.7,14.5l170.7,130.7C409.3,408.6,411.8,371.6,376,344.1z" />
+                        <path d="M857.5,713l-57.8-44.3c-35.9-27.5-71-15.3-100.7,14.5L869.7,814C890.8,777.5,893.4,740.4,857.5,713z" />
+                        <path d="M650.3,744c-30.4,40.8-123.2,21.4-210-45c-86.8-66.5-124-156.5-98.2-191l32.6-42.6L201.4,332.6c-58,75.7-58.6,177.1-9,252.6l-1.7,0.9c54.6,89.7,87.5,141.5,175.9,209.2c88.3,67.7,147,86,247.8,115.4l0.4-1.9c85.7,28.2,183.5,1.2,241.5-74.5L682.9,701.4L650.3,744z" />
+                      </g>
+                    </svg>
+
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <h4>Phone</h4>
+                    <a>
+                      +48 509 991 345
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-offset-1 is-5">
+            <div class="box is-activehover">
+              <article class="media">
+                <div class="media-left">
+                  <figure class="image is-64x64">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                      <g>
+                        <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                          <path d="M4620.4,5002.2C3556.6,4889.4,2690.9,4544,1912.6,3915.4c-204.9-165.8-637.8-607.9-782.9-799C643.9,2476.3,333,1790.1,190.3,1048.7c-267.1-1397.7,62.2-2786.1,939.5-3942c154.3-204.9,584.9-640.1,808.2-815.1c557.2-442.1,1172-752.9,1823.7-921c1455.2-375.3,2963.4-78.3,4181.5,824.3c257.9,191.1,782.9,716.1,974,974c902.6,1218.1,1199.7,2726.3,824.3,4181.5c-294.7,1149-1029.3,2171.3-2051.6,2857.5c-550.3,368.4-1268.7,644.7-1952.6,750.6C5502.3,4993,4807,5020.6,4620.4,5002.2z M5437.9,4023.6c303.9-36.8,518.1-85.2,808.2-181.9C7699,3360.5,8737.5,2073.3,8914.7,537.5C9078.2-897,8394.4-2356.9,7176.3-3167.4c-377.6-251-939.4-488.1-1370-575.6c-1591.1-322.4-3193.7,338.5-4094,1690.1c-409.9,617.1-649.3,1413.8-649.3,2164.4c0,1307.9,667.7,2549,1761.5,3278.9C3575.1,3892.4,4569.8,4131.9,5437.9,4023.6z" />
+                          <path d="M3273.4,2031.9c-161.2-43.8-297-124.3-432.9-255.6l-108.2-103.6l1135.2-566.4l1132.9-568.7l1135.2,568.7l1132.9,566.4l-108.2,103.6c-138.2,135.9-271.7,211.8-444.4,255.6C6517.8,2084.9,3466.8,2084.9,3273.4,2031.9z" />
+                          <path d="M2564.2-111.8l6.9-1008.5l71.4-149.7c133.5-276.3,359.2-467.4,642.4-541.1c204.9-53,3225.9-53,3430.8,0c283.2,73.7,499.7,257.9,640.1,538.8l73.7,152l6.9,1006.2c2.3,554.9,0,1008.5-4.6,1008.5c-6.9,0-531.9-257.9-1165.1-575.7C5228.3-199.3,5101.7-256.9,5000.4-256.9c-101.3,0-227.9,57.6-1266.4,575.7c-633.2,317.8-1158.2,575.7-1165.1,575.7C2564.2,894.4,2561.9,440.8,2564.2-111.8z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <h4>E-mail</h4>
+                    <a>
+                      hello@pperzyna.com
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header mt-4 mb-4">
+          <div class="header has-border-bottom--muted has-text-centered2">
+            <h2 class="title has-border-bottom--success is-4"> ... or send me a message!</h2>
+          </div>
+        </div>
+
+        <form name="contact" netlify>
+          <div class="field is-horizontal">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="text" placeholder="Name">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="email" placeholder="Email" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal mt-4">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <textarea class="textarea is-large" placeholder="Explain how I can help you"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="field is-horizontal mt-4">
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <button class="button is-large is-primary">
+                    let me know
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
     </div>
-  </article>
-</div>
+  </div>
+</section>
+
 {{ end }}
