@@ -14,3 +14,11 @@ workshop:
     name: "TBD"
     link: ""
 ---
+
+At the Cloud Native Warsaw Conference 2019 will be organized workshop about ...
+
+<!--more-->
+
+### Stay tuned!
+
+More information soon!

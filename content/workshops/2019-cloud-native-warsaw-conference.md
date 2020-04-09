@@ -14,3 +14,13 @@ workshop:
     name: "WeWork, Krucz 50"
     link: "https://goo.gl/maps/Uftqom2oG1aXNoQ98"
 ---
+
+At the Cloud Native Warsaw Conference 2019 will be organized workshop about Kubernetes Deployment with Istio - Service Mesh. Together with Marek Ruszczyk, We will be happy to lead that event for you.
+
+<!--more-->
+
+--- update --
+
+### Slides
+
+{{< slideshare id="A4ZYtyICgIF1It" >}}

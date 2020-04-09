@@ -17,8 +17,8 @@
       </div>
     </div>
 
-    <div class="columns">
-      <div class="column photo is-offset-1 is-4">
+    <div class="columns ">
+      <div class="column pt-0 is-padingless photo is-offset-1 is-4">
         <figure class="image is-2by1 has-text-centered img">
           <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
         </figure>
@@ -28,7 +28,7 @@
         </div>
         {{ end }}
       </div>
-      <div class="column header is-6 has-text-centered">
+      <div class="column pt-0 header is-7 has-text-centered">
         <h1 class="title is-size-3 has-border-bottom--success mt-3">{{ .Title }}</h1>
 
         <div class="columns">
@@ -64,14 +64,14 @@
       </div>
     </div>
 
-    <div class="columns is-multiline mt-4">
+    <div class="columns is-multiline">
       {{ if .Summary }}
-      <div class="column is-offset-2 is-8 is-size-4">
+      <div class="column pt-0 is-offset-2 is-8 is-size-4 has-text-justify has-text-indent">
         {{ .Summary }}
       </div>
       {{end}}
 
-      <div class="column is-offset-2 is-8 is-size-5">
+      <div class="column is-offset-2 is-8 is-size-5 content">
         {{ $body := replace .Content .Summary "" }} {{ $body | emojify | safeHTML }}
       </div>
     </div>
