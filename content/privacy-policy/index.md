@@ -2,6 +2,11 @@
 title: "Privacy Policy"
 date: 2020-04-01T9:00:00+02:00
 draft: false
+
+description: "Privacy Policy | Piotr Perzyna - Cloud Architect, DevOps Consultant"
+
+photo:
+  source: "/img/piotrperzyna.jpg"
 ---
 
 At pperzyna.com, accessible from https://pperzyna.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by pperzyna.com and how we use it.
