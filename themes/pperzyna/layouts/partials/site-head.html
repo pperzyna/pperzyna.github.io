@@ -31,3 +31,34 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+<script data-schema="Organization" type="application/ld+json">
+    {
+        "name": "{{ .Site.Title }}",
+        "url": "{{ .Site.BaseURL }}",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "email": "hello@pperzyna.com",
+            "telephone": "+48-509-991-345",
+            "contactType": "direct contact"
+        }],
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://pperzyna.com/img/piotrperzyna.jpg",
+            "width": 460,
+            "height": 460
+        },
+        "sameAs": ["https://github.com/pperzyna", "https://www.linkedin.com/in/piotrperzyna/", "https://twitter.com/PiotrPerzyna"],
+        "@type": "Organization",
+        "@context": "http://schema.org"
+    }
+</script>
+<script data-schema="WebPage" type="application/ld+json">
+    {
+        "@id": "{{ .Permalink }}",
+        "name": "{{ .Title }}",
+        "url": "{{ .Permalink }}",
+        "@type": "WebPage",
+        "@context": "http://schema.org"
+    }
+</script>

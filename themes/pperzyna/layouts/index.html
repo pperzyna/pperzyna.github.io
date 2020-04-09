@@ -15,12 +15,17 @@
               <img src="/img/piotrperzyna.jpg" alt="Piotr Perzyna" />
             </figure>
           </div>
-          <h2 class="title">
+          <h3 class="title">
             {{ partial "svg/piotrperzyna.svg" (dict "size" 35 ) }}
-          </h2>
-          <h1 class="subtitle has-text-primary mt-0">
-            <span>Cloud Native Architect</span> <span>DevOps Consultant</span>
-          </h1>
+          </h3>
+          <div>
+            <h1 class="subtitle has-text-primary mt-0">
+              Cloud Architect
+            </h1>
+            <h2 class="subtitle has-text-primary mt-0">
+              DevOps Consultant
+            </h2>
+          </div>
           {{ partial "page-social.html" . }}
         </div>
       </div>
@@ -102,12 +107,12 @@
 {{ end }}
 
 {{ define "head" }}
-{{- $carousel := resources.Get "css/bulma-carousel.sass" -}}
+{{- $carousel := resources.Get "css/bulma-carousel.min.css" -}}
 {{- $style := $carousel | toCSS | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" media="screen">
 {{ end }}
 
 {{ define "scripts" }}
-{{- $script := resources.Get "js/page-scroll.js" -}} {{- $scripts := $script | minify | fingerprint -}}
+{{- $script := resources.Get "js/bulma-carousel.min.js" -}} {{- $scripts := $script | minify | fingerprint -}}
 <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
 {{ end }}
