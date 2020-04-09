@@ -7,7 +7,7 @@ categories: ["monitoring"]
 
 photo:
   source: "/blog/img/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
-  credits: '<span>Photo by <a href="https://unsplash.com/@mats_speicher?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mats Speicher</a> on <a href="/s/photos/auto-dashboard-gauges?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  credits: '<span>Photo by <a href="https://unsplash.com/@mats_speicher?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" title="Mats Speicher">Mats Speicher</a> on <a href="https://unsplash.com/s/photos/auto-dashboard-gauges?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" title="unsplash">Unsplash</a></span>'
 ---
 
 Do you need to see results from your load tests? Do you know how to present stats on a well-arranged dashboard? I built Locust Exporter for gathering metrics from load tests.
