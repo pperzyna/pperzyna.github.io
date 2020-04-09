@@ -6,5 +6,5 @@ draft: false
 description: "Piotr Perzyna - Cloud Architect, DevOps Consultant"
 
 photo:
-  image: "/img/piotrperzyna.jpg"
+  source: "/img/piotrperzyna.jpg"
 ---
