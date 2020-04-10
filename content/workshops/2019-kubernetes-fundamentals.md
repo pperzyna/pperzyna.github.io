@@ -51,9 +51,9 @@ During the workshop you will become familiar with Docker and Kubernetes fundamen
 
 We would like to thank our Partners - Google Cloud and WeWork, for supporting our event!
 
-![google cloud](/img/logo-google-cloud.png "gcp")
+![google cloud](/img/logos/google-cloud.png "gcp")
 
-![wework](/img/logo-wework.png "wework")
+![wework](/img/logos/wework.png "wework")
 
 --- update ---
 
