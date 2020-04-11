@@ -4,7 +4,7 @@ date: 2020-04-01T9:00:00+02:00
 draft: false
 
 photo:
-  source: "/workshops/img/2020-cloud-native-warsaw-conference.png"
+  source: "/img/workshops/2020-cloud-native-warsaw-conference.png"
   credits: ""
 
 workshop:

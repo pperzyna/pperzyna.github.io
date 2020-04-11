@@ -6,7 +6,7 @@ draft: false
 description: "Deployment strategies in Kubernetes - How to deploy your app without breaking anything? "
 
 photo:
-  source: "/workshops/img/2019-kubernetes-fundamentals.png"
+  source: "/img/workshops/2019-kubernetes-fundamentals.png"
   credits: ""
 
 workshop:

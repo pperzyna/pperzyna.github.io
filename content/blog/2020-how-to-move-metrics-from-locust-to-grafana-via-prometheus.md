@@ -6,7 +6,7 @@ date: 2020-04-06T9:00:00+02:00
 categories: ["monitoring"]
 
 photo:
-  source: "/blog/img/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
+  source: "/img/blog/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
   credits: '<span>Photo by <a href="https://unsplash.com/@mats_speicher?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" title="Mats Speicher">Mats Speicher</a> on <a href="https://unsplash.com/s/photos/auto-dashboard-gauges?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" title="unsplash">Unsplash</a></span>'
 ---
 

@@ -4,9 +4,7 @@
       <figure class="image is-2by1">
         <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
       </figure>
-      {{ range first 1 .Page.Params.categories }}
-      <span class="category"> {{ . }} </span>
-      {{ end }}
+
     </a>
   </header>
   <div class="card-content pb-0">

@@ -7,5 +7,5 @@ type: open-source
 description: "Open-Source | Piotr Perzyna - Cloud Architect, DevOps Consultant"
 
 photo:
-  source: "/open-source/img/kubernetes.png"
+  source: "/img/open-source/kubernetes.png"
 ---

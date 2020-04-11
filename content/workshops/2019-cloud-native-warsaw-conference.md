@@ -4,7 +4,7 @@ date: 2019-09-12T9:00:00+02:00
 draft: false
 
 photo:
-  source: "/workshops/img/2019-cloud-native-warsaw-conference.png"
+  source: "/img/workshops/2019-cloud-native-warsaw-conference.png"
   credits: ""
 
 workshop:

@@ -20,6 +20,7 @@
         <div class="navbar-start"></div>
 
         <div class="navbar-end">
+          {{ if not .IsHome }}
           <a class="navbar-item" href="/blog/" title="Blog">
             blog
           </a>
@@ -28,13 +29,13 @@
             <a class="navbar-link">
               more
             </a>
-
             <div class="navbar-dropdown">
               <a href="/about/" title="About" class="navbar-item">
                 about me
               </a>
             </div>
           </div>
+          {{end}}
           <div class="navbar-item">
             <div class="buttons">
               <a href="/contact/" title="Contact" class="button is-primary is-outlined">
