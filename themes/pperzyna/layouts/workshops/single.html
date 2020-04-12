@@ -4,14 +4,24 @@
     <div class="columns">
       <div class="column is-offset-1 is-10">
         <nav class="breadcrumb mt-2 mb-2" aria-label="breadcrumbs">
-          <ul>
+          <ul itemscope itemtype="https://schema.org/BreadcrumbList">
             <li>
               <a href="{{ .Site.BaseURL }}/" title="pperzyna.com">
                 {{ partial "svg/home.svg" (dict "size" 14 ) }}
               </a>
             </li>
-            <li><a href="{{ .Site.BaseURL }}/workshops/" href="Workshops">Workshops</a></li>
-            <li><a href="{{ .Permalink }}" class="is-active" aria-current="page">{{ .Title }} </a></li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="{{ .Site.BaseURL }}/workshops/" href="Workshops">
+                <span itemprop="name">Workshops</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="{{ .Permalink }}" class="is-active" aria-current="page">
+                <span itemprop="name">{{ .Title }}</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
           </ul>
         </nav>
       </div>

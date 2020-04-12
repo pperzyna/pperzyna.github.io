@@ -4,6 +4,7 @@ title = "Piotr Perzyna"
 theme = "pperzyna"
 
 enableRobotsTXT = true
+disableHugoGeneratorInject = true
 
 [taxonomies]
   category = "categories"
