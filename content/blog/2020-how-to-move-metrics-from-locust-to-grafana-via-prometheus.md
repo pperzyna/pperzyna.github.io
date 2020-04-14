@@ -2,7 +2,7 @@
 title: "How to move metrics from Locust.io to Grafana via Prometheus"
 slug: how-to-move-metrics-from-locust-to-grafana-via-prometheus
 draft: false
-date: 2020-04-06T9:00:00+02:00
+date: 2020-04-13T9:00:00+02:00
 categories: ["monitoring"]
 
 photo:
@@ -16,4 +16,4 @@ Do you need to see results from your load tests? Do you know how to present stat
 
 ## Content
 
-Article was published on the [Container Solutions](https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus) blog.
+The article was published on the [Container Solutions](https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus) blog.
