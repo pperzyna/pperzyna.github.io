@@ -1,6 +1,6 @@
 ---
-title: "How to move metrics from Locust.io to Grafana via Prometheus"
-slug: how-to-move-metrics-from-locust-to-grafana-via-prometheus
+title: "How to export metrics from Locust to Grafana via Prometheus"
+slug: how-to-move-metrics-from-locust_io-to-grafana-via-prometheus
 draft: false
 date: 2020-04-13T9:00:00+02:00
 categories: ["monitoring"]
