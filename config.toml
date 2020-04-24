@@ -14,7 +14,7 @@ disableHugoGeneratorInject = true
 [outputs]
 #        ["HTML", "AMP", "RSS"]
   home = ["HTML", "RSS"]
-  page = ["HTML", "RSS"] 
+  page = ["HTML", "RSS", "AMP"]
 
 [minify]
   disableSVG = true

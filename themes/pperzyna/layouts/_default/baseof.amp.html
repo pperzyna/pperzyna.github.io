@@ -30,13 +30,11 @@
 </head>
 
 <body>
-  {{ block "header" . }}{{ partial "page-header.amp.html" .}}{{ end }}
+  {{ block "header" . }}{{ partial "site-header.amp.html" .}}{{ end }}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
-  {{ partial "site-scripts.html" . }}
-  {{ block "scripts" . }}{{ end }}
+  {{ block "footer" . }}{{ partial "site-footer.amp.html" . }}{{ end }}
 </body>
 
 </html>
