@@ -60,21 +60,7 @@
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="section-header">
-          <div class="header has-border-bottom--muted mb-2">
-            <h2 class="title has-border-bottom--success is-4">comments</h2>
-          </div>
-        </div>
-        <script src="https://utteranc.es/client.js" repo="pperzyna/pperzyna.com" issue-term="og:title" label="comment" theme="github-light" crossorigin="anonymous" async>
-        </script>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "page-comment.html" . }}
 {{ end }}
 
 {{ define "scripts" }}
