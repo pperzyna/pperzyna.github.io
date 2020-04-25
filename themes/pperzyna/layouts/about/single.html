@@ -29,10 +29,33 @@
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="columns is-centered is-multiline is-mobile has-text-centered">
-          {{ range shuffle (readDir "/static/img/certs") }}
+          {{ range readDir "/static/img/certs" }}
           <div class="column is-half-touch is-one-quarter-desktop">
             <figure class="image is-1by1">
               <img src="/img/certs/{{.Name | urlize }}" alt="{{.Name | urlize }}">
+            </figure>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="certs mt-4">
+  <div class="container">
+    <div class="section-header">
+      <div class="header has-text-centered has-border-bottom--muted">
+        <h4 class="title has-border-bottom--success is-4">my photos</h4>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-10">
+        <div class="columns is-centered is-multiline is-mobile has-text-centered">
+          {{ range readDir "/static/img/me" }}
+          <div class="column is-half-touch is-half-desktop">
+            <figure class="image is-16by9">
+              <img src="/img/me/{{.Name | urlize }}" alt="{{.Name | urlize }}">
             </figure>
           </div>
           {{ end }}
