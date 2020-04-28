@@ -10,6 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 
+  {{ with  .OutputFormats.Get "HTML" -}}
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- end }}
+
   {{- if .OutputFormats.Get "RSS" -}}
   {{- with .OutputFormats.Get "RSS" -}}
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
@@ -17,16 +21,19 @@
   {{- end -}}
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
-  {{- $all := resources.Get "css/amp.css" -}}
-  {{- $style := $all | minify  -}}
+  {{- $all := resources.Get "css/all.amp.sass" -}}
+  {{- $style := $all | toCSS | minify -}}
   <style amp-custom>
-  {{ $style.Content | safeCSS  }}
-  {{ block "style" . }}{{ end }}
+  {{ $style.Content | safeCSS }}
+  {{ block "style" . }}
+  {{ end }}
   </style>
 
   {{ partial "site-amp.html" . }}
   {{ partial "site-head.html" . }}
   {{ block "head" . }}{{ end }}
+
+  <script custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" async=""></script>
 </head>
 
 <body>

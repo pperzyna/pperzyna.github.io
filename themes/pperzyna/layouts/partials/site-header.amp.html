@@ -1,0 +1,60 @@
+<header class="ampstart-headerbar fixed flex justify-start mx-auto items-center top-0 left-0 right-0 pl2 pr4 ">
+  <a href="/" class="text-decoration-none inline-block ampstart-headerbar-home-link  ">
+    <div class="ampstart-headerbar-title">Piotr Perzyna</div>
+  </a>
+  <div class="mx-auto"></div>
+  <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
+    <ul class="list-reset center p0 flex justify-center nowrap">
+      <li class="ampstart-btn center">
+        {{ with  .OutputFormats.Get "HTML" -}}
+        <a href="{{ .Permalink }}" title="desktop version" aria-label="desktop version">full version</a>
+        {{- end }}
+      </li>
+    </ul>
+  </nav>
+  <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2">☰</div>
+</header>
+
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 md-hide lg-hide" layout="nodisplay" side="right">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="/about/">About</a></li>
+      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="/blog/">Blog</a></li>
+      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="/talks/">Talks</a></li>
+      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="/workshops/">Workshops</a></li>
+      <li class="ampstart-nav-item land-see-sidebar-nav-item ampstart-title-sm bold"><a class="ampstart-nav-link" href="/contact/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <ul class="ampstart-social-follow list-reset flex justify-around items-center flex-wrap m0 mb4">
+    <li>
+      <a href="https://github.com/pperzyna" target="_blank" class="inline-block p1" title="GitHub" aria-label="GitHub">
+        {{ partial "svg/github.svg" (dict "size" 46 "color" "#212433") }}
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/piotrperzyna" target="_blank" class="inline-block p1" title="LinkedIn" aria-label="LinkedIn">
+        {{ partial "svg/linkedin.svg" (dict "size" 46 "color" "#212433") }}
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/PiotrPerzyna" target="_blank" class="inline-block p1" title="Twitter" aria-label="Twitter">
+        {{ partial "svg/twitter.svg" (dict "size" 46 "color" "#212433") }}
+      </a>
+    </li>
+  </ul>
+
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+      <li class="ampstart-nav-item bold ampstart-btn center">
+        {{ with  .OutputFormats.Get "HTML" -}}
+        <a class="ampstart-nav-link" href="{{ .Permalink }}" title="desktop version" aria-label="desktop version">full version</a>
+        {{- end }}
+      </li>
+    </ul>
+  </nav>
+
+</amp-sidebar>
