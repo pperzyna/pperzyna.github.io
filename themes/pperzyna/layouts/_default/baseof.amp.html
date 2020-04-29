@@ -19,7 +19,7 @@
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
   {{- end -}}
   {{- end -}}
-
+  <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
   {{- $all := resources.Get "css/all.amp.sass" -}}
   {{- $style := $all | toCSS | minify -}}
@@ -40,6 +40,21 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ block "footer" . }}{{ partial "site-footer.amp.html" . }}{{ end }}
+
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+        "vars": {
+          "gtag_id": "UA-162850461-1",
+          "config": {
+            "UA-162850461-1": {
+              "groups": "default"
+            }
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
 </body>
 
 </html>
