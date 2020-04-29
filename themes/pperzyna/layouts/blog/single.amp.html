@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section>
+  <h1 class="bold has-border-bottom--success">{{ .Title }}</h1>
+  {{ if .Summary }}
+  <div class="description mb-2">
+    {{ .Summary }}
+  </div>
+  {{ end }}
+  <div class="mb-2 time"> {{ (time .Page.Date).Format "January 2, 2006" }} </div>
+  <amp-img alt="{{ .Title }}" src="{{ .Page.Params.photo.source }}" width="1.33" height="1" layout="responsive"></amp-img>
+
+  {{ if .Page.Params.photo.credits }}
+  <div class="credits mb-2">
+    {{ .Page.Params.photo.credits | safeHTML }}
+  </div>
+  {{ end }}
+  </div>
+  <div class="content">
+    {{ $body := replace .Content .Summary "" }} {{ $body | emojify | safeHTML }}
+  </div>
+</section>
+{{ end }}

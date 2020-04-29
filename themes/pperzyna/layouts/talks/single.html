@@ -24,14 +24,13 @@
             </li>
           </ul>
         </nav>
-
         <h1 class="title has-border-bottom--success has-text-centered">{{ .Title }}</h1>
         {{ if .Summary }}
         <div class="is-size-4 has-text-justify has-text-indent">
           {{ .Summary }}
         </div>
         {{ end }}
-        <div class="columns is-mobile is-vcentered">
+        <div class="columns is-mobile is-vcentered mb-2">
           <div class="column is-6 has-text-left">
             <div class="date">
               {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
@@ -41,17 +40,6 @@
           <div class="column is-6 has-text-right">
             {{ partial "page-share.html" . }}
           </div>
-        </div>
-        <div class="photo has-text-centered mt-2 mb-2">
-          <figure class="image is-16by9">
-            <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
-          </figure>
-
-          {{ if .Page.Params.photo.credits }}
-          <div class="credits mt-1 has-text-centered">
-            {{ .Page.Params.photo.credits | safeHTML }}
-          </div>
-          {{ end }}
         </div>
         <div class="is-size-5 content">
           {{ $body := replace .Content .Summary "" }} {{ $body | emojify | safeHTML }}
