@@ -7,6 +7,9 @@ date: 2018-03-21T9:00:00+02:00
 photo:
   source: "/img/talks/2018-helm-package-manager.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 <!--more-->

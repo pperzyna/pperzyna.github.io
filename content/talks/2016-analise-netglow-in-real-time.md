@@ -9,6 +9,9 @@ language: english
 photo:
   source: "/img/talks/2016-analise-netglow-in-real-time.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 <!--more-->

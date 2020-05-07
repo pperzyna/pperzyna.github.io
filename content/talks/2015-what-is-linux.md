@@ -9,6 +9,10 @@ language: english
 photo:
   source: "/img/talks/2015-what-is-linux.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe"]
+
 ---
 
 <!--more-->

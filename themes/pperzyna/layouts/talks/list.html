@@ -45,17 +45,10 @@
         {{ end }}
       </div>
       <div class="column is-3 is-offset-1">
-        <div class="section-header">
+        <div class="section-header ">
           <div class="header has-border-bottom--muted mb-2">
-            <h2 class="title has-border-bottom--success is-4">categories</h2>
+            <h2 class="title has-border-bottom--success is-4">last blog post</h2>
           </div>
-        </div>
-        <div>
-          <ul class="categories ml-4">
-            {{ range $key, $value := .Site.Taxonomies.categories }}
-            <li><a href="/categories/{{ $key | urlize }}">{{ $key | humanize }}</a> <small>({{ len $value }})</small></li>
-            {{ end }}
-          </ul>
         </div>
 
         {{ range first 1 (where .Site.Pages ".Params.workshop.past" false) }}

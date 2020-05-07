@@ -7,6 +7,9 @@ date: 2018-06-04T9:00:00+02:00
 photo:
   source: "/img/talks/2018-orchestration-new-milestone.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe", "amp-youtube"]
 ---
 
 <!--more-->

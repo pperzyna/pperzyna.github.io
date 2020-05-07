@@ -7,6 +7,9 @@ date: 2019-08-07T9:00:00+02:00
 photo:
   source: "/img/talks/2019-pact-contract-testing.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 <!--more-->

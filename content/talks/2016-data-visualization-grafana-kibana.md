@@ -9,6 +9,9 @@ language: polish
 photo:
   source: "/img/talks/2016-data-visualization-grafana-kibana.jpg"
   credits: ""
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 <!--more-->
