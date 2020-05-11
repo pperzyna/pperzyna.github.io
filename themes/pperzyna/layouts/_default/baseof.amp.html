@@ -24,7 +24,7 @@
   {{- $all := resources.Get "css/all.amp.sass" -}}
   {{- $style := $all | toCSS | minify -}}
   <style amp-custom>
-  {{ $style.Content | safeCSS }}
+  {{ trim $style.Content "@charset \"UTF-8\";" | safeCSS }}
   {{ block "style" . }}
   {{ end }}
   </style>
