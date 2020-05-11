@@ -1,19 +1,24 @@
 <link rel="manifest" href="/manifest.json">
 
-<meta name="author" content="Piotr Perzyna">
+<meta name="author" content="{{ .Site.Title }}">
 <meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 <meta name="twitter:site" content="@PiotrPerzyna" />
 <meta name="twitter:creator" content="@PiotrPerzyna" />
 
 <meta property="fb:app_id" content="245713733275854" />
 
 <meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:title" content="{{ .Title }}" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
 {{ if .Page.Params.photo.source }}
+<meta name="twitter:image" content="{{ absURL .Page.Params.photo.source }}" />
+<meta name="twitter:image:alt" content="{{ .Title }}" />
 <meta property="og:image" content="{{ absURL .Page.Params.photo.source }}" />
 {{ end }}
 
