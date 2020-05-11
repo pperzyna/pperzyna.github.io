@@ -7,9 +7,24 @@
             <h2 class="title has-border-bottom--success is-4">comments</h2>
           </div>
         </div>
-        <script src="https://utteranc.es/client.js" repo="pperzyna/pperzyna.github.io" issue-term="og:title" label="comment" theme="github-light" crossorigin="anonymous" async>
-        </script>
+        <div id="disqus_thread"></div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  var disqus_config = function () {
+    this.page.url = {{ .Page.Permalink }};
+    this.page.identifier = {{ .Page.RelPermalink }};
+  };
+
+  (function() {
+  var d = document, s = d.createElement('script');
+  s.src = 'https://pperzyna.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//pperzyna.disqus.com/count.js" async></script>
