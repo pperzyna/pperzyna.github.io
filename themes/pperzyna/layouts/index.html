@@ -47,7 +47,15 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="pt-4 pb-4">
+<section class="bar has-background-primary has-text-white pt-4 pb-4">
+  <div class="container">
+    <div class="has-text-centered is-size-4">
+      Let's have a disobliging chat over coffee or tea <span class="is-block-tablet"> about <b>Cloud</b>, <b>DevSecOps</b> or <b>Cloud Native</b>!</span>
+    </div>
+  </div>
+</section>
+
+<section class="mt-4 pt-4 pb-4">
   <div class="container">
     <div class="section-header pb-4" id="whoami">
       <div class="header has-text-centered has-border-bottom--muted">
@@ -96,41 +104,6 @@
           <a href="/open-source/" title="Open-Souce">
             <span>Open-Source</span>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bar has-background-primary has-text-white pt-4 pb-4">
-  <div class="container">
-    <div class="has-text-centered is-size-4">
-      Let's have a disobliging chat over coffee or tea <span class="is-block-tablet"> about <b>Cloud</b>, <b>DevSecOps</b> or <b>Cloud Native</b>!</span>
-    </div>
-  </div>
-</section>
-
-<section class="pt-8">
-  <div class="container">
-    <div class="section-header" id="whoami">
-      <div class="header has-text-centered has-border-bottom--muted">
-        <h4 class="title has-border-bottom--success is-4">companies trust me</h4>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-9">
-        <div class="glide pt-4 pb-4">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides">
-              {{ range shuffle (readDir "/static/img/clients") }}
-              <li class="glide__slide">
-                <figure class="image is-3by1">
-                  <img src="/img/clients/{{.Name | urlize }}" alt="{{.Name | urlize }}">
-                </figure>
-              </li>
-              {{ end }}
-            </ul>
-          </div>
         </div>
       </div>
     </div>
