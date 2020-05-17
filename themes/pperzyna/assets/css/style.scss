@@ -145,13 +145,18 @@ time {
 
 /* post & workshops */
 .photo {
-  width: 75%;
+  width: 85%;
   margin-right: auto;
   margin-left: auto;
 }
 
 .photo img {
   border-radius: $radius;
+}
+
+.metadata .column {
+  padding-top: 1rem !important;
+  padding-bottom: 0rem !important;
 }
 
 .opensource-supported .columns {

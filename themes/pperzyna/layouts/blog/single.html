@@ -30,14 +30,14 @@
           {{ .Summary }}
         </div>
         {{ end }}
-        <div class="columns is-mobile is-vcentered">
-          <div class="column is-6 has-text-left">
+        <div class="columns is-vcentered metadata">
+          <div class="column is-half-desktop is-one-mobile has-text-left">
             <div class="date">
               {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
               <time datetime="2016-1-1">{{ (time .Page.Date).Format "January 2, 2006" }}</time>
             </div>
           </div>
-          <div class="column is-6 has-text-right">
+          <div class="column is-half-desktop is-one-mobile has-text-right">
             {{ partial "page-share.html" . }}
           </div>
         </div>
