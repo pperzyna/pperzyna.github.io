@@ -1,3 +1,14 @@
-<figure class="image">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "title" }}">
-</figure>
+{{ $original := resources.Get (.Get "src") }}
+{{ $preview := $original.Resize "600x" }}
+
+<a href="#{{ path.Base (.Get "src") }}" onclick="LazyLoadImg()">
+  <figure class="image">
+    <img src="{{ $preview.RelPermalink }}" alt="{{ .Get "title" }}">
+  </figure>
+</a>
+
+<a href="#_" class="lightbox" id="{{ path.Base (.Get "src") }}">
+  <figure class="image">
+    <img src="" data-src="{{ $original.RelPermalink }}" alt="{{ .Get "title" }}">
+  </figure>
+</a>

@@ -1,11 +1,13 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162850461-1"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
 
-    gtag('config', 'UA-162850461-1');
+  gtag('config', 'UA-162850461-1');
 </script>
+{{- $script := resources.Get "js/scripts.js" -}} {{- $scripts := $script | minify | fingerprint -}}
+<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
