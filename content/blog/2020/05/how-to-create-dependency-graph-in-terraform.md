@@ -14,7 +14,9 @@ This Terraform feature comes as a Saviour! On a daily basis is not frequently us
 
 <!--more-->
 
-The problem with dependencies most often occurs during provisioning and destroying cloud resources, because terraform misidentified dependencies between them. **The most common solution** for that error is option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). The easiest way to get to know which resource is dependent on which one is to use `terraform graph`. The output from that command will be a visual representation in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
+The problem with dependencies most often occurs during provisioning and destroying cloud resources, because terraform misidentified dependencies between them. **The most common solution** for that error is option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). This param creates an [explicit relation](https://learn.hashicorp.com/terraform/getting-started/dependencies#implicit-and-explicit-dependencies).
+
+The easiest way to get to know which resource is dependent on which one is to use `terraform graph`. The output from that command will be a visual representation in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
 
 > Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
 
