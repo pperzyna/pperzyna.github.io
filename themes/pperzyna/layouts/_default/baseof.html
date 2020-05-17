@@ -12,8 +12,9 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
   {{- end -}}
 
-  <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
-  <link rel="preconnect dns-prefetch" href="https://www.google-analytics.com" crossorigin>
+  <meta name="theme-color" content="#72c89e">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link rel="preconnect" href="https://www.google-analytics.com">
 
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
   {{- $all := resources.Get "css/all.sass" -}}
