@@ -1,225 +1,228 @@
 body {
-    font-family: $family-primary;
-    background: #fff;
-    color: $text;
-    min-width: 315px;
-    overflow-x: hidden;
-    line-height: 1.6;
-    font-smooth: always;
-    -webkit-font-smoothing: antialiased
+  font-family: $family-primary;
+  background: #fff;
+  color: $text;
+  min-width: 315px;
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased
 }
 
 main {
-    max-width: 700px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 25px;
 }
 
 a {
-    color: $primary;
-    text-decoration: none;
+  color: $primary;
+  text-decoration: none;
 }
 
 .description {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .credits {
-    font-size: 12px;
-    color: #999;
-    text-align: center;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
 }
 
 .credits a {
-    color: #999;
+  color: #999;
 }
 
 .time {
-    color: $primary
+  color: $primary
 }
 
 .content {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 blockquote {
-    background: #f9f9f9;
-    border-left: 10px solid #72c89e;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+  background: #f9f9f9;
+  border-left: 10px solid #72c89e;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
 blockquote p {
-    display: inline;
+  display: inline;
 }
 
-  
+
 .ampstart-sidebar-nav a {
-    color: $text;
+  color: $text;
 }
 
 .ampstart-headerbar {
-    border-bottom: 2px solid $muted;
+  border-bottom: 2px solid $muted;
 }
 
 .ampstart-navbar-trigger:focus {
-    outline: none
+  outline: none
 }
 
 .ampstart-navbar-trigger,
 .ampstart-headerbar-home-link {
-    padding-top: 1.25rem;
-    padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
 }
 
 .ampstart-headerbar-home-link svg {
-    padding-left: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .ampstart-navbar-trigger {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .land-see-sidebar-nav-item {
-    color: #021425;
-    text-transform: capitalize;
-    letter-spacing: .6px;
-    line-height: 2.0625
+  color: #021425;
+  text-transform: capitalize;
+  letter-spacing: .6px;
+  line-height: 2.0625
 }
 
 .ampstart-nav a,
 .ampstart-navbar-trigger,
 .ampstart-sidebar-faq a {
-    cursor: pointer;
-    text-decoration: none
+  cursor: pointer;
+  text-decoration: none
 }
 
 .ampstart-btn {
-    font-size: 1rem;
-    line-height: 1.42857;
-    padding: .4em .8em;
-    text-decoration: none;
-    white-space: nowrap;
-    word-wrap: normal;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: $radius;
-    border: 2px solid $primary;
+  font-size: 1rem;
+  line-height: 1.42857;
+  padding: .4em .8em;
+  text-decoration: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: $radius;
+  border: 2px solid $primary;
 }
 
 .list-reset {
-    list-style: none;
-    padding-left: 0
+  list-style: none;
+  padding-left: 0
 }
 
 .flex {
-    display: -ms-flexbox;
-    display: flex
+  display: -ms-flexbox;
+  display: flex
 }
 
 .center {
-    text-align: center
+  text-align: center
 }
 
 .hide {
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px)
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px)
 }
 
 @media (max-width:40rem) {
-    .xs-hide {
-        display: none
-    }
+  .xs-hide {
+    display: none
+  }
 }
 
 @media (min-width:40.06rem) and (max-width:52rem) {
-    .sm-hide {
-        display: none
-    }
+  .sm-hide {
+    display: none
+  }
 }
 
 @media (min-width:52.06rem) and (max-width:64rem) {
-    .md-hide {
-        display: none
-    }
+  .md-hide {
+    display: none
+  }
 }
 
 @media (min-width:64.06rem) {
-    .lg-hide {
-        display: none
-    }
+  .lg-hide {
+    display: none
+  }
 }
 
 .display-none {
-    display: none
+  display: none
 }
 
 * {
-    box-sizing: border-box
+  box-sizing: border-box
 }
 
+.mt-2 {
+  margin-top: 1rem;
+}
 
 .m-0 {
-    margin: 0
+  margin: 0
 }
 
 .mb-4 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .p-0 {
-    padding: 0
+  padding: 0
 }
 
 .pl-1 {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .px-3 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
 }
 
 .pr-2 {
-    padding-right: 2rem
+  padding-right: 2rem
 }
 
 .mx-auto {
-    margin-right: auto;
-    margin-left: auto
+  margin-right: auto;
+  margin-left: auto
 }
 
 .items-start {
-    -ms-flex-align: start;
-    align-items: flex-start
+  -ms-flex-align: start;
+  align-items: flex-start
 }
 
 .nowrap {
-    white-space: nowrap
+  white-space: nowrap
 }
 
 
 .has-border-bottom--success {
-    display: inline-block;
-    padding-bottom: 0rem;
-    border-bottom: 2px solid $success;
+  display: inline-block;
+  padding-bottom: 0rem;
+  border-bottom: 2px solid $success;
 }
