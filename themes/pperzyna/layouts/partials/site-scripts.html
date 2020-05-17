@@ -10,4 +10,7 @@
   gtag('config', 'UA-162850461-1');
 </script>
 {{- $script := resources.Get "js/scripts.js" -}} {{- $scripts := $script | minify | fingerprint -}}
-<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}"></script>
+<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" async=""></script>
+
+{{- $script := resources.Get "js/lazysizes.js" -}} {{- $scripts := $script | minify | fingerprint -}}
+<script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" async=""></script>

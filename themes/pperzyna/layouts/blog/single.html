@@ -46,7 +46,7 @@
           {{ $preview := $original.Resize "800x" }}
 
           <figure class="image is-16by9">
-            <img src="{{ $preview.RelPermalink }}" data-src="{{ $original.RelPermalink }}" alt="{{ .Title }}" />
+            <img src="" data-src="{{ $preview.RelPermalink }}" origin-src="{{ $original.RelPermalink }}" class="lazyload" alt="{{ .Title }}" />
           </figure>
 
           {{ if .Page.Params.photo.credits }}

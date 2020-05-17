@@ -3,7 +3,7 @@
 
 <a href="#{{ path.Base (.Get "src") }}" onclick="LazyLoadImg()">
   <figure class="image">
-    <img src="{{ $preview.RelPermalink }}" alt="{{ .Get "title" }}">
+    <img src="" data-src="{{ $preview.RelPermalink }}" class="lazyload" alt="{{ .Get "title" }}">
   </figure>
 </a>
 
