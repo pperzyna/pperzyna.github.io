@@ -3,12 +3,12 @@
 
 <a href="#{{ path.Base (.Get "src") }}" onclick="LazyLoadImg()">
   <figure class="images">
-    <img src="" data-src="{{ $preview.RelPermalink }}" class="lazyload" alt="{{ .Get "title" }}">
+    <img src="" data-src="{{ $preview.RelPermalink }}" class="lazyload" alt="{{ .Get "title" }}" title="{{ .Get "title" }}">
   </figure>
 </a>
 
 <a href="#_" class="lightbox" id="{{ path.Base (.Get "src") }}">
   <figure class="images">
-    <img src="" data-src="{{ $original.RelPermalink }}" alt="{{ .Get "title" }}">
+    <img src="" data-src="{{ $original.RelPermalink }}" alt="{{ .Get "title" }}" title="{{ .Get "title" }}">
   </figure>
 </a>
