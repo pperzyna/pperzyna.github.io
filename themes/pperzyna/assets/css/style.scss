@@ -565,6 +565,14 @@ textarea {
   }
 }
 
+.content p {
+  text-align: justify;
+}
+
+.content figure {
+  margin: 2rem;
+}
+
 .image.is-50x50 {
   height: 50px;
   width: 50px;
