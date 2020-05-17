@@ -1,67 +1,35 @@
 {{ define "main" }}
-<section class="pt-4 has-border-top--muted">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-2 ">
-        <figure class="image is-square">
-          <img src="/img/piotrperzyna.jpg" class="is-rounded" alt="Piotr Perzyna"></figure>
-      </div>
-      <div class="column is-offset-1 is-4">
-        <div>
-          <span class="tag is-primary is-medium is-light">about me</span>
-        </div>
-        <div class="pt-2 pb-4 is-size-4">
-          Hi, I am Piotr Perzyna!
-          {{ .Content }}
-        </div>
-      </div>
-    </div>
+
+<section class="mt-4 mb-4">
+  <div class="center mt-4 mb-2">
+    <amp-img alt="Piotr Perzyna" src="/img/piotrperzyna.jpg" width="150" class="is-rounded" height="150" layout="fixed"></amp-img>
+  </div>
+  <div class="pt-2 pb-4 center">
+    Hi, I am Piotr Perzyna!
+    {{ .Content }}
   </div>
 </section>
 
-<section class="certs mt-4">
-  <div class="container">
-    <div class="section-header">
-      <div class="header has-text-centered has-border-bottom--muted">
-        <h4 class="title has-border-bottom--success is-4">my certifications</h4>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="columns is-centered is-multiline is-mobile has-text-centered">
-          {{ range readDir "/static/img/certs" }}
-          <div class="column is-half-touch is-one-quarter-desktop">
-            <figure class="image is-1by1">
-              <img src="/img/certs/{{.Name | urlize }}" alt="{{.Name | urlize }}">
-            </figure>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
+<section class="mt-4">
+  <div class="has-border-bottom--muted center">
+    <h4 class="has-border-bottom--success">my certifications</h4>
+  </div>
+  <div class="center">
+    {{ range readDir "/static/img/certs" }}
+    <amp-img alt="{{.Name | urlize | humanize | title }}" src="/img/certs/{{.Name | urlize }}" width="150" height="150" layout="fixed"></amp-img>
+    {{ end }}
   </div>
 </section>
 
-<section class="certs mt-4">
-  <div class="container">
-    <div class="section-header">
-      <div class="header has-text-centered has-border-bottom--muted">
-        <h4 class="title has-border-bottom--success is-4">my photos</h4>
-      </div>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-10">
-        <div class="columns is-centered is-multiline is-mobile has-text-centered">
-          {{ range readDir "/static/img/me" }}
-          <div class="column is-half-touch is-half-desktop">
-            <figure class="image is-16by9">
-              <img src="/img/me/{{.Name | urlize }}" alt="{{.Name | urlize }}">
-            </figure>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-    </div>
+<section class="mt-4">
+  <div class="has-border-bottom--muted center">
+    <h4 class="has-border-bottom--success">my photos</h4>
+  </div>
+  <div class="center">
+    {{ range readDir "/static/img/me" }}
+    <amp-img alt="{{.Name | urlize | humanize | title }}" src="/img/me/{{.Name | urlize }}" width="1.7" height="0.9" class="mb-2" layout="responsive"></amp-img>
+    {{ end }}
   </div>
 </section>
+
 {{ end }}

@@ -177,6 +177,10 @@ blockquote p {
   margin-top: 1rem;
 }
 
+.mt-4 {
+  margin-top: 2rem;
+}
+
 .m-0 {
   margin: 0
 }
@@ -220,6 +224,9 @@ blockquote p {
   white-space: nowrap
 }
 
+.is-rounded {
+  border-radius: 9999px;
+}
 
 .has-border-bottom--success {
   display: inline-block;
