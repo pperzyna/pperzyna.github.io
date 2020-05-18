@@ -19,7 +19,10 @@
   <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}" />
   {{- end -}}
   {{- end -}}
-  <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+  
+  <link rel="preconnect" href="https://www.google-analytics.com/" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
   {{- $all := resources.Get "css/all.amp.sass" -}}
   {{- $style := $all | toCSS | minify -}}
