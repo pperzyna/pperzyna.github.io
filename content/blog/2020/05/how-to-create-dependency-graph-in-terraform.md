@@ -16,7 +16,7 @@ This Terraform feature comes as a Saviour! On a daily basis is not frequently us
 
 ## The Implicit Dependency problem
 
-The problem with dependencies most often occurs during provisioning and destroying cloud resources, because terraform misidentified dependencies between them. The implicit dependency is formed when one block code reference to another, see the example below. It is a **primary way how Terraform resolves dependencies**.
+The problem with dependencies most often occurs during provisioning and destroying cloud resources, because sometimes terraform misidentified dependencies. **The primary way how Terraform resolves dependencies** is by implicit dependency, it is when one block of code uses a reference to another resource value, see the example below.
 
 ```hcl
 resource "aws_eip" "ip" {
@@ -30,7 +30,7 @@ resource "aws_eip" "ip" {
 
 ## The Explicit Dependency solution
 
-**The most common solution** is to add an option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). This param creates an [explicit relation](https://learn.hashicorp.com/terraform/getting-started/dependencies#implicit-and-explicit-dependencies).
+**The most common solution** is to add an option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). This param creates an [explicit relation](https://learn.hashicorp.com/terraform/getting-started/dependencies#implicit-and-explicit-dependencies). See the example below.
 
 ```hcl
 resource "aws_instance" "example" {
@@ -45,11 +45,11 @@ resource "aws_instance" "example" {
 
 ## Debugging
 
-The easiest way to get to know which resource is dependent on which one is to use `terraform graph`. The output from that command will be a visual representation of dependencies in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
+The easiest way to get to know which resource is dependent on which one, is to use `terraform graph`. The output from that command will be a visual representation of dependencies in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
 
 > Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
 
-Let's see how to do that, but first of all, you have to install a graphviz package on your system.
+This can help you understand and see all connections between resources that Terraform assume to determine the proper order of modifying cloud resources. Let's see how to do that, but first of all, you have to install a graphviz package on your system.
 
 ### Mac's
 

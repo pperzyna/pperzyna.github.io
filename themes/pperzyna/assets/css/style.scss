@@ -143,6 +143,14 @@ time {
   margin-bottom: 40px !important;
 }
 
+.mb-6 {
+  margin-bottom: 60px !important;
+}
+
+.content blockquote, .content pre {
+  margin: 1.5rem 0rem !important;
+}
+
 /* post & workshops */
 .photo {
   width: 85%;
@@ -564,8 +572,9 @@ textarea {
   }
 }
 
-.content p {
+p {
   text-align: justify;
+  line-height: 1.6;
 }
 
 .content figure {
