@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/piotrperzyna
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pperzyna.com
+  * I am piotrperzyna (https://keybase.io/piotrperzyna) on keybase.
+  * I have a public key with fingerprint 9453 F007 94B1 1F33 D4B2  BCFF 37FE 4575 E7B0 0A7E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a0a10d047a66e49c65c8f42972aa1ff4307fb6feaa238b92bb353a6f90ae852f0a",
+      "fingerprint": "9453f00794b11f33d4b2bcff37fe4575e7b00a7e",
+      "host": "keybase.io",
+      "key_id": "37fe4575e7b00a7e",
+      "kid": "0101a0a10d047a66e49c65c8f42972aa1ff4307fb6feaa238b92bb353a6f90ae852f0a",
+      "uid": "7d4854f9573a386bb1b99aebbcafc219",
+      "username": "piotrperzyna"
+    },
+    "service": {
+      "hostname": "pperzyna.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1589997623,
+  "expire_in": 157680000,
+  "prev": "4aeba8a5dc06c3936fbfd9402b46671986276d521d2ca13811c9bb37143f34d8",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkn9MVWUYxy+/JvcKy7tdJawmHsqEUM7vc96LyxDQWEICOddQbu855z1wQO69
+nnu5cPlhTWYCYt4WEZGtEoZQoxCRO1qLhlGKw4pRgQ4YyHRslHCNhinQuUz+68/e
+f969z/P5ft/nefZ4woN0hgBuOaXobofheMD1GUGX02/fVYYJNsmNmcuwArR6oaMS
+cjgtBYqEmTGcwAmIQwKXcJqDLItoILKMyMs0CTgSQkKWaQrnZIGVEYQkxQuAFASK
+oSArAxwiniFlHGJxmKxYc5FqVxWrU7MFNEPJOM4BWiAImaIkWiAFUZYpTkY0wzGI
+E3AcckgT5tkcfoVWnAAdaKdi02Law7Ja3n/w/3PdRat2nETzDC0DhqMgxbOCQAgA
+QCQIIpRFkgB+0IFUKyxEGm1XbE7VjtRStxViFXGYlnEpIvIP19/NGvWY2CnaCjW9
+XbU5baLtqJbJczrtDrNf6XTb/WgxEiyPTSyCYpW0WWoKF1Idis2KmQmNFJ2K35Vg
+eAAAx5JUHIZK7IqKLIqfYDiWx7Xj/we5NEsaosMC5CEjiTgrUoBiZUGWAI2TAs2y
+HAF4luRYiSEJiRQhQfEEIQJtQhxBUzJFSzzm7+uY1YaZGa1OmKt5OpRcK3QWqQir
+MFQHUsG6AIPumU1bg+uy5tbVXdxCDXd+s7K2fyGB/uXTGfQb1iKPTBt01Tk/foh+
+Ba3tR/Z4n/du6UkOb5B/Et/4w7zvTFboyZNJpvsXfRnBqdU1pVAd8BzX1wxUNs93
+5SQWSM2iy9QRU1++NLwts0I2putQy8G5vQfGXnr9VsxXySPn3wzb2Nbg6AE+tzwN
+LkdmS9nfJzwEl39LGK+//dzoB5W9QblDjZ6zxkpgOTEZ9WVjLP8LuFOc3zNQ02p0
+Ne7YJ8y+GLGYMXa6Tf+tfW9564xns14Ji/zbeTBspO52wc3UFl13tGWsIeRGNHni
+lbMdJU+3rGAlMR5fhzvT7NUvjkQduzEdZVI9ieZgZunS7k1nnl2Y6luf9ntVY96l
+iNHomrIdTy50jjocfS9MpttXqh41/ZxvrOeeinnv3oP4wglTTLgj/1Bfd+J3Fz76
+LOI+xafuz4rcun3h/Sq35UF/9XhgMHPt6ru7es8tdzon3V1L44l9OuxhkLv/k0Oz
+CSXrr7w9N3Q6ZH5bWq/vSGnA5lP24cSJyuvFi4GdUd1G62J97ddcSsT+9tiokXtF
+viarrxuFfw69DVODmbvN3KuhybE+/QFfdEntxtrtpdPrkvbEDk5koKlTF66cf+et
+xrTmcjm5ImV2Qu2qM/VK156YPvzaD8SnN3vVoXhQfLeJNN7585+CnuKZkPZb2YbB
++bbl2Y+zXF/8FT/nraDPjaTkpV8NTXo5O8c0mNT2Lw==
+=Xa+9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/piotrperzyna
+
+==================================================================
