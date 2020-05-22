@@ -1,5 +1,5 @@
 ---
-title: "How to solve implicit dependency problem via Terraform Graph?"
+title: "How to solve implicit dependency problems via Terraform Graph?"
 url: blog/how-to-create-dependency-graph-in-terraform
 draft: false
 date: 2020-05-17T9:00:00+02:00
@@ -65,7 +65,7 @@ sudo apt-get install graphviz
 
 ### Windows
 
-The necessery windows installer, you can download from [WinGraphviz website](http://wingraphviz.sourceforge.net/wingraphviz/).
+The necessary windows installer, you can download from [WinGraphviz website](http://wingraphviz.sourceforge.net/wingraphviz/).
 
 ## Create a Dependency Graph
 
