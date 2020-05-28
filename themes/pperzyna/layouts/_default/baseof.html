@@ -7,7 +7,12 @@
   <title>{{ block "title" . }}{{ with .Params.Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ if isset .Params "canonical" }}
+  <link rel="canonical" href="{{ index .Params "canonical" }}">
+  {{ else }}
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ end }}
+
   {{- range .AlternativeOutputFormats -}}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
   {{- end -}}

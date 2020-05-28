@@ -4,6 +4,7 @@ url: blog/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus
 draft: false
 date: 2020-04-13T9:00:00+02:00
 categories: ["monitoring"]
+canonical: https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus
 
 photo:
   source: "/img/blog/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
