@@ -1,8 +1,11 @@
+{{ $original := resources.Get (.Page.Params.photo.source) }}
+{{ $preview := $original.Resize "300x" }}
+
 <div class="card card-equal-height blog_item">
   <header class="card-image">
     <a href="{{ .Permalink }}" class="blog_img" title="{{ .Title }}">
       <figure class="image is-2by1">
-        <img src="{{ .Page.Params.photo.source }}" alt="{{ .Title }}" />
+        <img src="" data-src="{{ $preview.RelPermalink }}" class="lazyload" alt="{{ .Title }}" />
       </figure>
     </a>
   </header>

@@ -16,7 +16,7 @@
     <a href="{{ .Permalink }}" class="title" title="{{ .Title }}">{{ .Title }}</a>
   </div>
   <footer class="card-footer is-borderless">
-    <div class="card-footer-item is-borderless date">
+    <div class="card-footer-item is-borderless date ml-1">
       {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
       <time datetime="2016-1-1">{{ .Date.Format "January 2, 2006" }}</time>
     </div>

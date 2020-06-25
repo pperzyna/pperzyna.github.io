@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <section class="hero is-muted">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -58,9 +57,15 @@
           </ul>
         </div>
 
+        {{ partial "page-twitter.html" . }}
+
         {{ range first 1 (where .Site.Pages ".Params.workshop.past" false) }}
+        <div class="section-header">
+          <div class="header has-border-bottom--muted mb-2">
+            <h2 class="title has-border-bottom--success is-4">upcoming workshops</h2>
+          </div>
+        </div>
         <div class="box is-muted has-text-centered mt-4">
-          <h3 class="title is-size-4 ">upcoming workshops</h3>
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
