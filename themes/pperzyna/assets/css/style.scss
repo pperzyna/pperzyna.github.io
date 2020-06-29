@@ -41,6 +41,19 @@ time {
   border-bottom: 2px solid $success;
 }
 
+.has-text-white a {
+  color: #FFFFFF;
+}
+
+.has-text-white a:hover {
+  color: $muted;
+  text-decoration: underline;
+}
+
+.has-radius {
+  border-radius: $radius;
+}
+
 /* margins & padings */
 
 .p-1 {
@@ -73,6 +86,10 @@ time {
 
 .pb-2 {
   padding-bottom: 20px !important;
+}
+
+.pb-3 {
+  padding-bottom: 30px !important;
 }
 
 .pb-4 {
@@ -151,6 +168,10 @@ time {
   margin-bottom: 60px !important;
 }
 
+.mb-8 {
+  margin-bottom: 80px !important;
+}
+
 .content blockquote,
 .content pre {
   margin: 1.5rem 0rem !important;
@@ -181,7 +202,7 @@ time {
   font-size: 1.3rem;
 }
 
-.blog-olded .card-content a.title,
+.blog-old .card-content a.title,
 .workshop-past .card-content a.title {
   font-size: 1.1rem;
 }
@@ -345,7 +366,6 @@ time {
 }
 
 .hero-main figure svg {
-
   position: absolute;
   margin-left: -72px;
   margin-top: -8px;
@@ -420,12 +440,12 @@ ul.categories {
 }
 
 .platforms:before {
-  left: -50px;
+  left: 60px;
   top: -40px;
 }
 
 .platforms:after {
-  right: -50px;
+  right: 60px;
   bottom: -40px;
 }
 
@@ -610,7 +630,6 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-
   .breadcrumb a.is-active {
     overflow: hidden;
     max-width: 150px;
@@ -678,7 +697,6 @@ p {
 
   .title {
     font-size: 1.75rem !important;
-    ;
   }
 
   .hero-main h1.subtitle {
@@ -715,7 +733,7 @@ p {
 }
 
 #_share>a.whatsapp:hover>svg {
-  fill: #2DB843;
+  fill: #2db843;
 }
 
 #_share>a.linkedin:hover>svg {
@@ -792,7 +810,6 @@ p {
     transform: translateY(-20px);
   }
 }
-
 
 @keyframes rotating {
   0% {

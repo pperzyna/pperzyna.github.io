@@ -9,7 +9,7 @@
   </div>
 </section>
 
-<section class="blog pt-3 pb-5">
+<section class="blog pt-3 pb-3">
   <div class="container">
     <div class="columns ">
       <div class="column is-8 ">
@@ -18,7 +18,7 @@
             <h2 class="title has-border-bottom--success is-4">latest articles</h2>
           </div>
         </div>
-        <div class="columns blog-last">
+        <div class="columns blog-last mb-2">
           {{ range first 2 .Pages }}
           <div class="column is-half">
             {{ .Render "list-item" }}
@@ -26,13 +26,14 @@
           {{ end }}
           {{ .Content }}
         </div>
+        {{ partial "page-bar.html" (dict "class" "has-radius" "content" . ) }}
         {{if gt (len .Pages) 2}}
         <div class="section-header mt-4">
           <div class="header has-border-bottom--muted mb-2">
             <h2 class="title has-border-bottom--success is-4">older articles</h2>
           </div>
         </div>
-        <div class="columns is-multiline blog-olded">
+        <div class="columns is-multiline blog-old">
           {{ $paginator := .Paginate (after 2 .Pages) 6 }}
           {{ range .Paginator.Pages }}
           <div class="column is-4">
@@ -56,33 +57,12 @@
             {{ end }}
           </ul>
         </div>
-
+        {{ partial "page-latest-workshop.html" . }}
         {{ partial "page-twitter.html" . }}
-
-        {{ range first 1 (where .Site.Pages ".Params.workshop.past" false) }}
-        <div class="section-header">
-          <div class="header has-border-bottom--muted mb-2">
-            <h2 class="title has-border-bottom--success is-4">upcoming workshops</h2>
-          </div>
-        </div>
-        <div class="box is-muted has-text-centered mt-4">
-          <article class="media">
-            <div class="media-left">
-              <figure class="image is-64x64">
-                <img src="{{ .Page.Params.photo.source }}" class="is-rounded" alt="{{ .Page.Title }}">
-              </figure>
-            </div>
-            <div class="media-content">
-              <div class="content has-text-centered">
-                <a href="{{ .Page.Permalink }}" title="{{ .Page.Title }}">{{ .Page.Title }}</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        {{end }}
-
-      </div>
       </div>
     </div>
+  </div>
 </section>
+
+{{ partial "page-whereami.html" . }}
 {{ end }}

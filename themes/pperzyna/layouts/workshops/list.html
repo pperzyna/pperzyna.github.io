@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <section class="hero is-muted">
   <div class="hero-body">
     <div class="container has-text-centered">
@@ -9,62 +10,50 @@
   </div>
 </section>
 
-<section class="blog pt-3 pb-5">
+<section class="blog pt-3 pb-3">
   <div class="container">
-    <div class="columns workshop-future">
-      <div class="column is-two-thirds">
-        <div class="section-header ">
+    <div class="columns ">
+      <div class="column is-8 ">
+        <div class="section-header">
           <div class="header has-border-bottom--muted mb-2">
             <h2 class="title has-border-bottom--success is-4">future workshops</h2>
           </div>
         </div>
-        <div class="columns is-multiline">
+        <div class="columns blog-last mb-2">
           {{ range where .Pages.ByDate ".Params.workshop.past" false}}
           <div class="column is-half">
             {{ .Render "list-item" }}
           </div>
           {{ else }}
-          <div class="column has-text-centered">... sorry no workshops at this time ...</div>
+          <div class="column has-text-centered mt-6 mb-6">... sorry, no scheduled workshops at this time ...</div>
           {{ end }}
+          {{ .Content }}
         </div>
-      </div>
-
-      <!--
-      <div class="column is-one-thirds workshop-demand ">
-        <div class="box has-background-white-ter">
-          <div class="has-text-centered">
-            <h3 class="title">think <span class="has-text-success">cloud native</span></h3>
-          </div>
-        </div>
-        <div class="box">
-          <div class="has-text-centered has-text-weight-bold">
-            <blockquote>An investment in knowledge pays the best interest.</blockquote>
-          </div>
-          <div class="has-text-right">
-            Benjamin Franklin
-          </div>
-        </div>
-      </div>
-      -->
-    </div>
-    <div class="columns">
-      <div class="column workshop-past">
-        <div class="section-header">
+        {{ partial "page-bar.html" (dict "class" "has-radius" "content" . ) }}
+        {{if gt (len .Pages) 2}}
+        <div class="section-header mt-4">
           <div class="header has-border-bottom--muted mb-2">
             <h2 class="title has-border-bottom--success is-4">past workshops</h2>
           </div>
         </div>
-        {{ $paginator := .Paginate (where .Pages ".Params.workshop.past" true) 8 }}
-        <div class="columns is-multiline">
+        <div class="columns is-multiline blog-old">
+          {{ $paginator := .Paginate (where .Pages ".Params.workshop.past" true) 6 }}
           {{ range .Paginator.Pages }}
-          <div class="column is-3">
+          <div class="column is-4">
             {{ .Render "list-item" }}
           </div>
           {{ end }}
         </div>
-        {{ partial "page-pagination.html" . }}
+        <div class="mt-4">{{ partial "page-pagination.html" . }}</div>
+        {{ end }}
+      </div>
+      <div class="column is-3 is-offset-1">
+        {{ partial "page-latest-blog.html" . }}
+        {{ partial "page-twitter.html" . }}
       </div>
     </div>
   </div>
 </section>
+
+{{ partial "page-whereami.html" . }}
 {{ end }}
