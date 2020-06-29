@@ -1,5 +1,5 @@
 {{ $original := resources.Get (.Get "src") }}
-{{ $preview := $original.Resize "600x" }}
+{{ $preview := $original.Resize ( .Get "size" | default "600x" ) }}
 
 <a href="#{{ path.Base (.Get "src") }}" onclick="LazyLoadImg()">
   <figure class="images">

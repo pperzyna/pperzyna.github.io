@@ -77,4 +77,4 @@ terraform graph | dot -Tsvg > graph.svg
 
 then you will create a graph similar to that one:
 
-{{< img src="/img/blog/how-to-create-dependency-graph.png" title="Dependency Graph in Terraform" >}}
+{{< img src="/img/blog/how-to-create-dependency-graph.png" title="Dependency Graph in Terraform" size="658x" >}}

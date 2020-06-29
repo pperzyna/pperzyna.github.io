@@ -35,7 +35,7 @@ cd locust/examples/docker-compose
 docker-compose up -d
 ```
 
-{{< img src="/img/blog/locust-master.png" title="Locust Master" >}}
+{{< img src="/img/blog/locust-master.png" title="Locust Master" size="456x" >}}
 
 ## 2. Dump stats via Locust Exporter
 

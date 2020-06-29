@@ -20,6 +20,6 @@
       {{ partial "svg/calendar.svg" (dict "size" 14 ) }}
       <time datetime="2016-1-1">{{ .Date.Format "January 2, 2006" }}</time>
     </div>
-    <a href="{{ .Permalink }}" class="card-footer-item is-borderless explore_btn " title="{{ .Title }}">read more</a>
+    <a href="{{ .Permalink }}" class="card-footer-item is-borderless explore_btn is-hidden-touch is-hidden-desktop-only" title="{{ .Title }}">read more</a>
   </footer>
 </div>
