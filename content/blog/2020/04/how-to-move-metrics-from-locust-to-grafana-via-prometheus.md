@@ -101,4 +101,4 @@ This is how you can use our exporter. From now on, after each load test you can 
 
 ---
 
-The article was originally published on the [Container Solutions](https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus) blog.
+The article has been originally published on the [Container Solutions](https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus) blog.
