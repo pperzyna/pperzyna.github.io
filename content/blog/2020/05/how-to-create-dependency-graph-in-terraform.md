@@ -10,13 +10,13 @@ photo:
   credits: '<span>Photo by <a href="https://unsplash.com/@lunarts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Volodymyr Hryshchenko</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
 ---
 
-This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. **Terraform Graph** command generates a visual representation of configuration or execution plan.
+This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. **Terraform Graph** command generates a visual representation of dependencies to help you debug easier.
 
 <!--more-->
 
 ## The Implicit Dependency problem
 
-The problem with dependencies most often occurs during provisioning and destroying cloud resources, because sometimes terraform misidentified dependencies. **The primary way how Terraform resolves dependencies** is by implicit dependency, it is when one block of code uses a reference to another resource value, see the example below.
+The problem with dependencies most often occurs during provisioning and destroying cloud resources, because sometimes terraform misidentified dependencies. The primary way how Terraform resolves dependencies is by **implicit dependency**, it is when one block of code uses a reference to another resource value, see the example below.
 
 ```hcl
 resource "aws_eip" "ip" {
@@ -30,7 +30,7 @@ resource "aws_eip" "ip" {
 
 ## The Explicit Dependency solution
 
-**The most common solution** is to add an option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). This param creates an [explicit relation](https://learn.hashicorp.com/terraform/getting-started/dependencies#implicit-and-explicit-dependencies). See the example below.
+The most common solution is to add an option `depends_on`, which can you directly set up in the resource block in [terraform code](https://www.terraform.io/docs/configuration/resources.html#resource-dependencies). This param creates an [explicit relation](https://learn.hashicorp.com/terraform/getting-started/dependencies#implicit-and-explicit-dependencies). See the example below.
 
 ```hcl
 resource "aws_instance" "example" {
