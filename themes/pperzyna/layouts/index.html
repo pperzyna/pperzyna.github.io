@@ -50,34 +50,3 @@
 {{ partial "page-bar.html" (dict "class" "mb-8" "content" . ) }}
 {{ partial "page-whereami.html" . }}
 {{ end }}
-
-{{ define "head" }}
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" as="style" onload="this.rel='stylesheet'">
-{{ end }}
-
-{{ define "scripts" }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js" async></script>
-<script>
-  document.onreadystatechange = () => {
-    if (document.readyState === 'complete') {
-      new Glide('.glide', {
-        type: 'carousel',
-        startAt: 0,
-        autoplay: 1000,
-        animationDuration: 2000,
-        hoverpause: true,
-        perView: 5,
-        breakpoints: {
-          1024: {
-            perView: 4
-          },
-          600: {
-            perView: 2
-          }
-        },
-        gap: 50,
-      }).mount()
-    }
-  };
-</script>
-{{ end }}

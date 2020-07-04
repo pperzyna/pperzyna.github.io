@@ -14,3 +14,13 @@
 
 {{- $script := resources.Get "js/lazysizes.js" -}} {{- $scripts := $script | minify | fingerprint -}}
 <script type="text/javascript" src="{{ $scripts.Permalink }}" integrity="{{ $scripts.Data.Integrity }}" async=""></script>
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "048f0537-2c3e-4de7-9b92-3825c3f548d0",
+    });
+  });
+</script>
