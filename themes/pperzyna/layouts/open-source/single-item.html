@@ -1,7 +1,10 @@
+{{ $original := resources.Get (.Page.Params.photo.source) }}
+{{ $preview := $original.Resize "400x" }}
+
 <div class="card is-shadowless blog_item is-radiusless">
   <div class="card-image">
     <figure class="image">
-      <img src="{{ .Page.Params.photo.source }}" class="is-radiusless" alt="{{ .Title }}" />
+      <img src="" data-src="{{ $preview.RelPermalink }}" class="lazyload is-radiusless" alt="{{ .Title }}" />
     </figure>
   </div>
   <div class="card-content has-text-centered is-vcentered">
