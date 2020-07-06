@@ -54,7 +54,17 @@ time {
   border-radius: $radius;
 }
 
+hr {
+  margin-top: 60px !important;
+  margin-bottom: 40px !important;
+  border-top: 2px solid #f3f3f3 !important;
+}
+
 /* margins & padings */
+
+td.is-vcentered {
+  vertical-align: middle !important;
+}
 
 .p-1 {
   padding: 1.5rem !important;

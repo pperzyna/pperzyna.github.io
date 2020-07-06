@@ -94,6 +94,30 @@ blockquote p {
   display: inline;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table.is-bordered tr:last-child td, .table.is-bordered tr:last-child th {
+  border-bottom-width: 1px;
+}
+
+.table tr:last-child td, .table tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.table tr:last-child td, .table tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.table.is-bordered td {
+  border: 1px solid #72c89e;
+}
+
+.table td {
+  padding: 15px
+}
 
 .ampstart-sidebar-nav a {
   color: $text;
@@ -196,6 +220,12 @@ blockquote p {
 
 .display-none {
   display: none
+}
+
+hr {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  border-top: 2px solid #f3f3f3;
 }
 
 * {

@@ -139,6 +139,10 @@ If you would like to hear more about how to extend Kubernetes, take a look at th
 
 {{< youtube id="8QoCL1NCVv4" >}}
 
+Do you wanna build quickly an operator? Take the benefits from one of Kubernetes Operator Frameworks. Here is an "Awesome" list of all frameworks available on the market:
+
+{{< repo href="https://github.com/pperzyna/awesome-operator-frameworks" title="pperzyna/awesome-operator-frameworks" desc="A curated list of awesome Kubernetes Operator Frameworks" img="/img/logo/awesome-operator-frameworks.png" >}}
+
 ---
 
 The article has been originally published on the [Container Solutions](https://blog.container-solutions.com/kubernetes-operators-explained) blog.

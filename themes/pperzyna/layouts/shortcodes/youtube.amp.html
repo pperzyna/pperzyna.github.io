@@ -1,3 +1,5 @@
 {{ with .Get "id" }}
-<amp-youtube data-videoid="{{ . }}" layout="responsive" width="480" height="270"></amp-youtube>
+<div class="mt-2 mb-4">
+  <amp-youtube data-videoid="{{ . }}" layout="responsive" width="480" height="270"></amp-youtube>
+</div>
 {{ end }}
