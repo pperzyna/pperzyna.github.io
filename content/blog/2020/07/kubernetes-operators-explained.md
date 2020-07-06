@@ -6,6 +6,9 @@ date: 2020-07-01T9:00:00+02:00
 categories: ["kubernetes"]
 canonical: https://blog.container-solutions.com/kubernetes-operators-explained
 
+amp:
+  elements: ["amp-youtube"]
+
 photo:
   source: "/img/blog/kubernetes-operators-explained.jpg"
   credits: '<span>Photo by <a href="https://unsplash.com/@scienceinhd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Science in HD</a> on <a href="https://unsplash.com/s/photos/operator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'

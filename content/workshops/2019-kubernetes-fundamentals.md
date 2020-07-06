@@ -15,6 +15,9 @@ workshop:
   place:
     name: "WeWork, Krucz 50"
     link: "https://goo.gl/maps/Uftqom2oG1aXNoQ98"
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 Together with Container Solutions, We are proud to host a free workshop for the Cloud Native Community. We will guide a group of 25 participants through the basics of Kubernetes giving a hands on experience with our tutorial.

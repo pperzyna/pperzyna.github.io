@@ -15,6 +15,9 @@ workshop:
   place:
     name: "WeWork, Krakowskie Przed. 13"
     link: "https://goo.gl/maps/Bf6B9stkuSJiU7228"
+
+amp:
+  elements: ["amp-iframe"]
 ---
 
 Together with Container Solutions, We are proud to host a FREE workshop for the Cloud Native Community. We will guide a group of 25 participants through the Deployment Strategies in Kubernetes giving a hands on experience with our tutorial.
@@ -45,8 +48,6 @@ As a Cloud Native expert will share my knowledge and experience of Kubernetes an
 - How to choose the best strategy for your application
 
 **Basic knowledge of Kubernetes is required to fully participate in the workshop!**
-
---- update ---
 
 ### Slides
 
