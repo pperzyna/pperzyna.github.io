@@ -7,7 +7,7 @@ categories: ["software"]
 
 photo:
   source: "/img/blog/why-using-framework-is-good-habit.jpg"
-  credits: '<span>Photo by <a href="https://unsplash.com/@pinewatt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">pine watt</a> on <a href="https://unsplash.com/s/photos/frame-into-frame?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>'
+  credits: '<span>Photo by <a href="https://unsplash.com/@pinewatt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="nofollow">pine watt</a> on <a href="https://unsplash.com/s/photos/frame-into-frame?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>'
 ---
 
 What are 5 benefits that software frameworks can offer you? No matter if it's related to Frontend or Backend development. In both cases profit is obvious!

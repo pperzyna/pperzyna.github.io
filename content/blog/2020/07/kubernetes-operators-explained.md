@@ -11,7 +11,7 @@ amp:
 
 photo:
   source: "/img/blog/kubernetes-operators-explained.jpg"
-  credits: '<span>Photo by <a href="https://unsplash.com/@scienceinhd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Science in HD</a> on <a href="https://unsplash.com/s/photos/operator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  credits: '<span>Photo by <a href="https://unsplash.com/@scienceinhd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Science in HD</a> on <a href="https://unsplash.com/s/photos/operator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>'
 ---
 
 Have you ever wondered how effective Site Reliability Engineering (SRE) teams manage complex applications successfully? In the Kubernetes ecosystem, there is only one answer: Kubernetes Operators! In this article, we will examine both what they are and how they work.

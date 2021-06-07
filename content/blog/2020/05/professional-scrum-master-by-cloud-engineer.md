@@ -7,7 +7,7 @@ categories: ["management"]
 
 photo:
   source: "/img/blog/professional-scrum-master-by-cloud-engineer.jpg"
-  credits: '<span>Photo by <a href="https://unsplash.com/@designhorf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ferenc Horvath</a> on <a href="https://unsplash.com/s/photos/agile?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  credits: '<span>Photo by <a href="https://unsplash.com/@designhorf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Ferenc Horvath</a> on <a href="https://unsplash.com/s/photos/agile?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>'
 ---
 
 Recently, I decided to review and organize my knowledge about Scrum - agile framework to manage projects. I marked 6 points that helped me prepare and pass PSM 1.

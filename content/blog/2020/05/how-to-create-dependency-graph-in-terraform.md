@@ -7,7 +7,7 @@ categories: ["build"]
 
 photo:
   source: "/img/blog/how-to-create-dependency-graph-in-terraform.jpg"
-  credits: '<span>Photo by <a href="https://unsplash.com/@lunarts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Volodymyr Hryshchenko</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  credits: '<span>Photo by <a href="https://unsplash.com/@lunarts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Volodymyr Hryshchenko</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" rel="nofollow">Unsplash</a></span>'
 ---
 
 This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. **Terraform Graph** command generates a visual representation of dependencies to help you debug easier.
