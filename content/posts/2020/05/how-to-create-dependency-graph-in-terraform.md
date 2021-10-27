@@ -4,7 +4,7 @@ createdAt: 2020-05-17T9:00:00+02:00
 url: /blog/how-to-create-dependency-graph-in-terraform/
 title: "How to solve implicit dependency problems via Terraform Graph?"
 description: |
-  This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. **Terraform Graph** command generates a visual representation of dependencies to help you debug easier.
+  This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. Terraform Graph command generates a visual representation of dependencies to help you debug easier.
 
 photo:
   source: "/img/blog/how-to-create-dependency-graph-in-terraform.jpg"

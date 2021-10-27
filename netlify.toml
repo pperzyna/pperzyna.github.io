@@ -1,11 +1,8 @@
 [build]
-publish = "dist"
-command = "yarn build && yarn generate"
-
-[context.production.environment]
-HUGO_VERSION = "0.70.0"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+  CI = "1"
+  PUBLISH = "dist"
+  COMMAND = "yarn build && yarn generate"
+  NETLIFY_USE_YARN = "true"
 
 [[redirects]]
   from = "/*"
