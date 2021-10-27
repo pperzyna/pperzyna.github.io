@@ -1,7 +1,9 @@
 [build]
+  publish = "dist"
+  command = "yarn build && yarn generate"
+
+[build.environment]
   CI = "1"
-  PUBLISH = "dist"
-  COMMAND = "yarn build && yarn generate"
   NETLIFY_USE_YARN = "true"
 
 [[redirects]]
