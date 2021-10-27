@@ -1,0 +1,63 @@
+@import '~bulma/sass/utilities/_all';
+
+$primary: #005B7B;
+$success: #72C89E;
+$text: #212433;
+$muted: #f5f5f5;
+
+// Set your colors
+$primary: #005B7B;
+$primary-light: #e9f4ff;
+$primary-invert: findColorInvert($primary);
+$success: #72C89E;
+$success-invert: findColorInvert($success);
+$success-light: #f5fffe;
+$grey: #f5f5f5;
+$grey-invert: findColorInvert($warning);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  'white': (
+    $white,
+    $black,
+  ),
+  'primary': (
+    $primary,
+    $primary-invert,
+    $primary-light,
+  ),
+  'success': (
+    $success,
+    $success-invert,
+    $success-light,
+  ),
+  'grey': (
+    $grey,
+    $grey-invert,
+  ),
+);
+
+$radius-small: 10px;
+$radius: 20px;
+$radius-large: 30px;
+$input-radius: $radius-small;
+
+$link: $primary;
+$family-primary: "Nunito";
+
+$desktop: 1024px;
+$section-padding: 3rem 4rem;
+$footer-padding: 3rem;
+$button-border-width: 2px;
+
+$title-size: 2.75rem;
+$title-line-height: 1.4;
+$title-weight: 700;
+
+$navbar-height: 5rem;
+$navbar-dropdown-boxed-radius: $radius;
+
+$pagination-disabled-color: #ffffff;
+$footer-background-color: $muted;
+
+$column-gap: 1.5rem 0.75rem;

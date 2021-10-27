@@ -1,4 +1,0 @@
-{{ $src := print "assets/"  (.Get "src") }}
-{{ $original := imageConfig ( $src ) }}
-
-<amp-img alt="{{ .Get "title" }}" src="{{ .Get "src" }}" width="{{ $original.Width }}" height="{{ $original.Height }}" layout="responsive"></amp-img>
