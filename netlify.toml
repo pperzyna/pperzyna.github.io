@@ -1,11 +1,10 @@
 [build]
-publish = "public"
-command = "hugo --gc --minify"
+  publish = "dist"
+  command = "yarn build && yarn generate"
 
-[context.production.environment]
-HUGO_VERSION = "0.70.0"
-HUGO_ENV = "production"
-HUGO_ENABLEGITINFO = "true"
+[build.environment]
+  CI = "1"
+  NETLIFY_USE_YARN = "true"
 
 [[redirects]]
   from = "/*"
