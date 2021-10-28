@@ -5461,10 +5461,10 @@
                                 ></span>
                               </div>
                               <div style="line-height: 1.5"><br /></div>
-                              <table style="width: 100%">
+                              <table style="width: 100%" aria-label="datas">
                                 <tbody>
                                   <tr>
-                                    <td
+                                    <th
                                       style="
                                         width: 33.8274%;
                                         border-left: 1px solid black;
@@ -5487,8 +5487,8 @@
                                           ></span
                                         ></span
                                       >
-                                    </td>
-                                    <td
+                                    </th>
+                                    <th
                                       style="
                                         width: 51.4385%;
                                         border-top: 1px solid black;
@@ -5510,8 +5510,8 @@
                                           ></span
                                         ></span
                                       >
-                                    </td>
-                                    <td
+                                    </th>
+                                    <th
                                       style="
                                         width: 14.9084%;
                                         border-right: 1px solid black;
@@ -5534,7 +5534,7 @@
                                           ></span
                                         ></span
                                       >
-                                    </td>
+                                    </th>
                                   </tr>
                                   <tr>
                                     <td

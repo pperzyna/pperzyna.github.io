@@ -6,8 +6,8 @@
         <a href="/contact/" title="Contact" class="has-text-white">a disobliging chat</a> over coffee
         or tea
         <span class="is-block-tablet"
-          >about <b>Cloud</b>, <b>DevOps</b>, <b>K8s</b>, or
-          <b>Cloud Native</b>!</span
+          >about <strong>Cloud</strong>, <strong>DevOps</strong>, <strong>K8s</strong>, or
+          <strong>Cloud Native</strong>!</span
         >
       </div>
     </div>

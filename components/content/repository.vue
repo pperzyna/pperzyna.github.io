@@ -1,20 +1,20 @@
 <template>
 <div class="table-container">
-  <table class="table is-fullwidth is-bordered">
+  <table class="table is-fullwidth is-bordered" :aria-label="title">
     <tr>
-      <td class="is-vcentered p-6">
+      <th class="is-vcentered p-6">
         <h5>
           <a :href="url" :title="title">{{ title }}</a>
         </h5>
         <slot />
-      </td>
-      <td class="is-vcentered" width="30%">
+      </th>
+      <th class="is-vcentered" width="30%">
         <a :href="url" :title="title">
           <figure class="image repository">
             <img :src="img" :alt="title" />
           </figure>
         </a>
-      </td>
+      </th>
     </tr>
   </table>
 </div>

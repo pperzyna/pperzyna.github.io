@@ -26,8 +26,8 @@
               </g></svg
           ></a>
           <p class="pt-1 has-text-indent has-text-justified">
-            Hi! I'm <b>Piotr Perzyna</b>, a <b>cloud architect</b>,
-            <b>developer</b> &amp; general problem solver. Looking for support?
+            Hi! I'm <strong>Piotr Perzyna</strong>, a <strong>cloud architect</strong>,
+            <strong>developer</strong> &amp; general problem solver. Looking for support?
             <a href="/contact/" title="Contact Me">Contact me</a>, I'm happy
             help you!
           </p>

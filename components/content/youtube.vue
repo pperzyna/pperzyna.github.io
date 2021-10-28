@@ -1,6 +1,7 @@
 <template>
   <figure class="image is-16by9 has-text-centered mx-6">
     <iframe
+      title="youtube"
       class="has-ratio"
       width="560"
       height="315"

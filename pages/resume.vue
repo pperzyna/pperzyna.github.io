@@ -10,6 +10,7 @@
     <div class="container">
       <figure class="image py-6 has-text-centered">
         <iframe
+          title="cv"
           class="has-ratio"
           width="1240"
           height="1754"

@@ -5,7 +5,7 @@
       width="560"
       height="315"
       :src="`//www.slideshare.net/slideshow/embed_code/key/` + id"
-      title="SlideShare Presentation"
+      title="slideshare"
       frameborder="0"
       marginwidth="0"
       marginheight="0"
