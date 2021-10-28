@@ -10865,20 +10865,6 @@
                                               ></span
                                             >
                                           </div>
-                                          <style>
-                                            ul {
-                                              list-style-type: square;
-                                            }
-                                            ul > li > ul {
-                                              list-style-type: circle;
-                                            }
-                                            ul > li > ul > li > ul {
-                                              list-style-type: square;
-                                            }
-                                            ol li {
-                                              font-family: Arial;
-                                            }
-                                          </style>
                                         </div>
                                       </div>
                                     </div>

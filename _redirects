@@ -1,7 +1,6 @@
-/cv                               /resume/
-/cv/                              /resume/
-
-/categories/software/             /blog/
-/categories/monitoring/           /blog/
-/categories/kubernetes/           /blog/
-/categories/management/           /blog/
+/cv/                              /resume/              301
+/amp/*                            /:splat               301
+/categories/software/             /blog/                301
+/categories/monitoring/           /blog/                301
+/categories/kubernetes/           /blog/                301
+/categories/management/           /blog/                301

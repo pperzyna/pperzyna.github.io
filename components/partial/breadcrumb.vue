@@ -1,5 +1,5 @@
 <template>
-  <nav aria-label="breadcrumbs" class="breadcrumb is-small mt-3">
+  <nav aria-label="breadcrumbs" class="breadcrumb mt-3">
     <ul itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
       <li
         itemprop="itemListElement"
@@ -8,7 +8,7 @@
       >
         <a href="/" class="is-active" itemprop="item"
           >
-          <SvgHome />
+          <SvgIconHome />
           <meta itemprop="name" content="Piotr Perzyna" />
 
  </a
@@ -20,7 +20,7 @@
         itemscope="itemscope"
         itemtype="https://schema.org/ListItem"
       >
-        <a :href="title_url" class="is-active" itemprop="item"
+        <a :href="titleUrl" class="is-active" itemprop="item"
           ><span itemprop="name">{{ title }}</span></a
         >
         <meta itemprop="position" content="2" />
@@ -32,7 +32,7 @@
         class="is-active"
       >
         <a
-          :href="subtitle_url"
+          :href="subtitleUrl"
           aria-current="page"
           class="nuxt-link-exact-active is-active"
           itemprop="item"

@@ -5,9 +5,9 @@
         <div class="column is-8">
           <PartialBreadcrumb
             title="Talks"
-            title_url="/talks/"
+            titleUrl="/talks/"
             :subtitle="content.title"
-            :subtitle_url="content.url"
+            :subtitleUrl="content.url"
           />
         </div>
         <div class="column is-8">
@@ -19,7 +19,7 @@
         </div>
 
         <div class="column is-8">
-          <div class="columns is-mobile is-vcentered">
+          <div class="columns px-4 is-mobile is-vcentered">
             <div class="column is-one-third-mobile has-text-grey p-0">
               {{ content.createdAt | formatDate }}
             </div>
@@ -118,12 +118,26 @@ export default {
           name: 'twitter:description',
           content: this.content.description,
         },
+        this.canonical
       ],
       script: [{ type: 'application/ld+json', json: this.Aritcle }],
     }
   },
 
   computed: {
+    canonical() {
+      if (this.content.canonical)
+        return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: this.content.canonical,
+        }
+      return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com' + this.$route.path,
+      };
+    },
     Aritcle() {
       return {
         '@context': 'http://schema.org',

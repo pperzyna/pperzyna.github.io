@@ -2,7 +2,7 @@
   <svg
    class="mt-1"
     xmlns="http://www.w3.org/2000/svg"
-    height="10"
+    height="14"
     viewBox="0 0 486.196 486.196"
   >
     <path

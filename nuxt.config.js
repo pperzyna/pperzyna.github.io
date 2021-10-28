@@ -1,3 +1,5 @@
+import { getRoutes, getRoutesPayload } from './utils/url'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -33,9 +35,7 @@ export default {
   pageTransition: 'fade',
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/format-date.js'
-  ],
+  plugins: ['~/plugins/format-date.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -44,27 +44,44 @@ export default {
   buildModules: [
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-fonts',
-    '@nuxt/typescript-build',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    // https://go.nuxtjs.dev/content
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
     '@nuxt/content',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
 
+  googleAnalytics: {
+    id: 'UA-162850461-1',
+    fields: {
+      cookieFlags: 'samesite=none;secure',
+    },
+  },
+
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
+    workbox: {
+      clientsClaim: false,
+    },
+    meta: {
+      ogHost: 'https://pperzyna.com',
+    },
     manifest: {
-      lang: 'en'
-    }
+      name: 'Piotr Perzyna',
+      short_name: 'pperzyna.com',
+      lang: 'en',
+      start_url: `/blog/?utm_source=pwa`,
+      description: '',
+    },
+    icon: {
+      purpose: 'any',
+    },
   },
 
   googleFonts: {
@@ -76,11 +93,101 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['workshop.past', 'opensource.mine']
+    nestedProperties: ['workshop.past', 'opensource.mine'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    loaders: {
+      cssModules: {
+        modules: {
+          localIdentName: '[hash:base64:4]',
+        },
+      },
+    },
+    extractCSS: true,
+    html: {
+      minify: {
+        minifyJS: false,
+        minifyCSS: false,
+        decodeEntities: true,
+        useShortDoctype: true,
+        trimCustomFragments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        collapseBooleanAttributes: true,
+        processConditionalComments: true,
+      },
+    },
+  },
+
+  robots: {
+    Allow: '/',
+    Disallow: ['/_nuxt/', '/*.pdf$'],
+    UserAgent: '*',
+    Sitemap: ['https://pperzyna.com/sitemap/index.xml'],
+  },
+
+  sitemap: {
+    gzip: true,
+    path: '/sitemap/index.xml',
+    lastmod: new Date(),
+    hostname: 'https://pperzyna.com',
+    sitemaps: [
+      {
+        gzip: true,
+        path: '/sitemap/top.xml',
+        defaults: {
+          changefreq: 'weekly',
+          priority: 0.9,
+          lastmod: new Date(),
+        },
+        exclude: ['/**'],
+        routes() {
+          return getRoutes(['top'])
+        },
+      },
+      {
+        gzip: true,
+        path: '/sitemap/blog.xml',
+        defaults: {
+          changefreq: 'weekly',
+          priority: 1,
+          lastmod: new Date(),
+        },
+        exclude: ['/**'],
+        routes() {
+          return getRoutes(['blog'])
+        },
+      },
+      {
+        gzip: true,
+        path: '/sitemap/talks.xml',
+        defaults: {
+          changefreq: 'monthly',
+          priority: 0.8,
+          lastmod: new Date(),
+        },
+        exclude: ['/**'],
+        routes() {
+          return getRoutes(['talks'])
+        },
+      },
+      ,
+      {
+        gzip: true,
+        path: '/sitemap/workshops.xml',
+        defaults: {
+          changefreq: 'monthly',
+          priority: 0.7,
+          lastmod: new Date(),
+        },
+        exclude: ['/**'],
+        routes() {
+          return getRoutes(['workshops'])
+        },
+      },
+    ],
   },
 
   router: {
@@ -88,5 +195,13 @@ export default {
     trailingSlash: true,
     prefetchLinks: false,
     prefetchPayloads: false,
+  },
+
+  generate: {
+    crawler: false,
+    fallback: '404.html',
+    routes() {
+      return getRoutesPayload()
+    },
   },
 }

@@ -5,9 +5,9 @@
         <div class="column is-8">
           <PartialBreadcrumb
             title="Workshops"
-            title_url="/workshops/"
+            titleUrl="/workshops/"
             :subtitle="content.title"
-            :subtitle_url="content.url"
+            :subtitleUrl="content.url"
           />
         </div>
         <div class="column is-12">
@@ -135,12 +135,26 @@ export default {
           name: 'twitter:description',
           content: this.content.description,
         },
+        this.canonical
       ],
       script: [{ type: 'application/ld+json', json: this.Aritcle }],
     }
   },
 
   computed: {
+    canonical() {
+      if (this.content.canonical)
+        return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: this.content.canonical,
+        }
+      return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com' + this.$route.path,
+      };
+    },
     Aritcle() {
       return {
         '@context': 'http://schema.org',

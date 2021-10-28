@@ -1,15 +1,17 @@
 @import '~bulma/sass/utilities/_all';
 
-$primary: #005B7B;
-$success: #72C89E;
+$variable-columns: false;
+
+$primary: #005b7b;
+$success: #72c89e;
 $text: #212433;
 $muted: #f5f5f5;
 
 // Set your colors
-$primary: #005B7B;
+$primary: #005b7b;
 $primary-light: #e9f4ff;
 $primary-invert: findColorInvert($primary);
-$success: #72C89E;
+$success: #72c89e;
 $success-invert: findColorInvert($success);
 $success-light: #f5fffe;
 $grey: #f5f5f5;
@@ -43,7 +45,7 @@ $radius-large: 30px;
 $input-radius: $radius-small;
 
 $link: $primary;
-$family-primary: "Nunito";
+$family-primary: 'Nunito';
 
 $desktop: 1024px;
 $section-padding: 3rem 4rem;
@@ -60,4 +62,4 @@ $navbar-dropdown-boxed-radius: $radius;
 $pagination-disabled-color: #ffffff;
 $footer-background-color: $muted;
 
-$column-gap: 1.5rem 0.75rem;
+$column-gap: 1rem;

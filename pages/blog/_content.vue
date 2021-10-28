@@ -4,22 +4,22 @@
       <div class="column is-8">
         <PartialBreadcrumb
           title="Blog"
-          title_url="/blog/"
+          titleUrl="/blog/"
           :subtitle="content.title"
-          :subtitle_url="content.url"
+          :subtitleUrl="content.url"
         />
       </div>
 
       <div class="column is-8">
-        <PartialHeader centered tag="h1" size="is-size-2" class="mt-2 mb-6">{{
-          content.title
-        }}</PartialHeader>
+        <PartialHeader centered tag="h1" size="is-size-2" class="mt-2 mb-6">
+          {{ content.title }}
+        </PartialHeader>
         <!-- eslint-disable-next-line vue/no-v-html -->
         <p class="is-size-4" v-html="content.description"></p>
       </div>
 
       <div class="column is-8">
-        <div class="columns is-mobile is-vcentered">
+        <div class="columns px-4 is-mobile is-vcentered">
           <div class="column is-one-third-mobile has-text-grey p-0">
             <SvgIconCalendar class="pr-1" />
             {{ content.createdAt | formatDate }}
@@ -31,7 +31,7 @@
       </div>
 
       <div class="column is-7 has-text-centered">
-        <picture class="image is-16by9"
+        <picture class="image is-16by9 my-2"
           ><img
             :src="content.photo.source"
             :alt="content.title"
@@ -39,7 +39,10 @@
             class="has-rounded"
         /></picture>
         <!-- eslint-disable-next-line vue/no-v-html -->
-        <span class="is-size-7 mt-4 mb-3 has-text-grey" v-html="content.photo.credits">
+        <span
+          class="is-size-7 mt-4 mb-3 has-text-grey"
+          v-html="content.photo.credits"
+        >
         </span>
       </div>
 
@@ -111,19 +114,32 @@ export default {
           name: 'twitter:description',
           content: this.content.description,
         },
+        this.canonical,
       ],
       script: [{ type: 'application/ld+json', json: this.Aritcle }],
     }
   },
 
   computed: {
+    canonical() {
+      if (this.content.canonical)
+        return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: this.content.canonical,
+        }
+      return {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com' + this.$route.path,
+      };
+    },
     Aritcle() {
       return {
         '@context': 'http://schema.org',
         '@type': 'BlogPosting',
         headline: this.content.title,
         dateModified: this.content.updatedAt,
-        // articleSection: this.content.tag,
         datePublished: this.content.createdAt,
         // mainEntityOfPage: {
         //   '@type': 'WebPage',
@@ -144,7 +160,7 @@ export default {
           name: 'pperzyna.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://flypark.io/logos/nextpark_logo_amp.png',
+            url: 'https://pperzyna.com/img/logo/piotrperzyna.png',
           },
         },
         image: [this.content.photo.source],

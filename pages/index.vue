@@ -120,8 +120,8 @@ export default {
   },
 
   head() {
-    const title = "Piotr Perzyna"
-    const description = ""
+    const title = 'Piotr Perzyna'
+    const description = ''
 
     return {
       titleTemplate: title,
@@ -130,6 +130,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: description,
+        },
+        {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com',
         },
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: title },

@@ -2,7 +2,7 @@
 draft: false
 createdAt: 2020-04-13T9:00:00+02:00
 url: /blog/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus/
-title: "How to export metrics from Locust to Grafana via Prometheus"
+title: How to export metrics from Locust to Grafana via Prometheus
 description: |
   Do you need to see results from your load tests? Do you know how to present stats on a well-arranged dashboard? I built Locust Exporter for gathering metrics from load tests.
 canonical: https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus

@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="columns">
+      <div class="columns mt-4">
         <div class="column is-8">
           <PartialHeader> latest articles </PartialHeader>
           <div class="columns pt-4">
@@ -73,6 +73,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: description,
+        },
+        {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com' + this.$route.path,
         },
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: title },

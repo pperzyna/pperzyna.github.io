@@ -27,14 +27,8 @@
 
     <section class="m-6">
       <div class="container">
-        <div class="section-header">
-          <div class="header has-text-centered has-border-bottom--muted">
-            <h4 class="title has-border-bottom--success is-4">
-              my certifications
-            </h4>
-          </div>
-        </div>
-        <div class="columns is-centered">
+        <PartialHeader centered> my certifications </PartialHeader>
+        <div class="columns is-centered mt-4">
           <div class="column is-8">
             <div
               class="
@@ -161,14 +155,8 @@
 
     <section class="m-6">
       <div class="container">
-        <div class="section-header">
-          <div class="header has-text-centered has-border-bottom--muted">
-            <h4 class="title has-border-bottom--success is-4">
-              my photos
-            </h4>
-          </div>
-        </div>
-        <div class="columns is-centered">
+        <PartialHeader centered> my photos </PartialHeader>
+        <div class="columns mt-4 is-centered">
           <div class="column is-10">
             <div
               class="
@@ -209,8 +197,8 @@
 <script>
 export default {
   head() {
-    const title = "Cloud Engineer, DevOps Consultant"
-    const description = ""
+    const title = 'Cloud Engineer, DevOps Consultant'
+    const description = ''
 
     return {
       title,
@@ -219,6 +207,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: description,
+        },
+        {
+          hid: 'canonical',
+          property: 'canonical',
+          content: 'https://pperzyna.com' + this.$route.path,
         },
         // Open Graph
         { hid: 'og:title', property: 'og:title', content: title },

@@ -1,11 +1,11 @@
 <template>
-  <section class="section py-6 mb-6">
+  <section class="section px-4 mb-6">
     <div class="container">
       <PartialHeader centered> where you can find me </PartialHeader>
-      <div class="columns has-text-centered mt-4">
-        <div class="column">
+      <div class="columns is-mobile is-multiline has-text-centered mt-4">
+        <div class="column is-half-mobile">
           <nuxt-link to="/blog/" title="Blog">
-            <figure class="image px-6">
+            <figure class="image px-4">
               <img src="/images/other/blog.png" alt="Blog" />
             </figure>
           </nuxt-link>
@@ -13,9 +13,9 @@
             Blog
           </nuxt-link>
         </div>
-        <div class="column">
+        <div class="column is-half-mobile">
           <nuxt-link to="/talks/" title="Public Speeches">
-            <figure class="image px-6">
+            <figure class="image px-4">
               <img src="/images/other/talk.png" alt="Public Speeches" />
             </figure>
           </nuxt-link>
@@ -23,9 +23,9 @@
             Talks
           </nuxt-link>
         </div>
-        <div class="column">
+        <div class="column is-half-mobile">
           <nuxt-link to="/workshops/" title="Workshops">
-            <figure class="image px-6">
+            <figure class="image px-4">
               <img src="/images/other/workshop.png" alt="Workshops" />
             </figure>
           </nuxt-link>
@@ -33,14 +33,14 @@
             Workshops
           </nuxt-link>
         </div>
-        <div class="column">
+        <div class="column is-half-mobile">
           <nuxt-link to="/open-source/" title="Open-Souce">
-            <figure class="image px-6">
+            <figure class="image px-4">
               <img src="/images/other/opensource.png" alt="Open-Souce" />
             </figure>
           </nuxt-link>
           <nuxt-link to="/open-source/" title="Open-Souce" class="title is-size-4">
-            Open-Source
+            Projects
           </nuxt-link>
         </div>
       </div>
