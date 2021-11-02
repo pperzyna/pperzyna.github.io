@@ -160,7 +160,7 @@ export default {
           name: 'pperzyna.com',
           logo: {
             '@type': 'ImageObject',
-            url: 'https://pperzyna.com/img/logo/piotrperzyna.png',
+            url: 'https://pperzyna.com/images/logo/piotrperzyna.png',
           },
         },
         image: [this.content.photo.source],

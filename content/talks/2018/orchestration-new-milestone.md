@@ -6,7 +6,7 @@ title: "Is Orchestration a New Milestone?"
 description: |
 
 photo:
-  source: "/img/talks/2018-orchestration-new-milestone.jpg"
+  source: "/images/content/talks/2018-orchestration-new-milestone.jpg"
   credits: ""
 ---
 

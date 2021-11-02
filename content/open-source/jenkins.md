@@ -5,7 +5,7 @@ title: "Jenkins"
 description: |
 
 photo:
-  source: "/img/open-source/jenkins.png"
+  source: "/images/content/open-source/jenkins.png"
   credits: ""
 
 opensource:

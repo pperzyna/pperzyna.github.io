@@ -5,7 +5,7 @@ title: "awesome operator-frameworks"
 description: |
 
 photo:
-  source: "/img/logo/awesome-operator-frameworks.png"
+  source: "/images/logo/awesome-operator-frameworks.png"
   credits: ""
 
 opensource:

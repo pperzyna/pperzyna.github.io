@@ -5,7 +5,7 @@ title: "Pact Broker Exporter"
 description: |
 
 photo:
-  source: "/img/open-source/pact_broker_exporter.png"
+  source: "/images/content/open-source/pact_broker_exporter.png"
   credits: ""
 
 opensource:

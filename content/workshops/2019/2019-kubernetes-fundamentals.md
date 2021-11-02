@@ -7,7 +7,7 @@ description: |
   Together with Container Solutions, We are proud to host a free workshop for the Cloud Native Community. We will guide a group of 25 participants through the basics of Kubernetes giving a hands on experience with our tutorial.
 
 photo:
-  source: "/img/workshops/2019-kubernetes-fundamentals.png"
+  source: "/images/content/workshops/2019-kubernetes-fundamentals.png"
   credits: ""
 
 workshop:
@@ -48,8 +48,8 @@ During the workshop you will become familiar with Docker and Kubernetes fundamen
 
 We would like to thank our Partners - Google Cloud and WeWork, for supporting our event!
 
-![/img/logo/google-cloud.png](Google Cloud Platform)
-![/img/logo/wework.png](WeWork)
+![/images/logo/google-cloud.png](Google Cloud Platform)
+![/images/logo/wework.png](WeWork)
 
 ### Slides
 

@@ -6,7 +6,7 @@ title: "What is the current and the desired state in Kubernets?"
 description: |
 
 photo:
-  source: "/img/blog/what-is-current-and-desired-state-in-kubernetes.jpg"
+  source: "/images/content/posts/what-is-current-and-desired-state-in-kubernetes.jpg"
   credits: 'Photo by Hasmik Ghazaryan Olson on Unsplash'
 ---
 

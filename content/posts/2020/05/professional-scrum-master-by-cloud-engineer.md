@@ -7,7 +7,7 @@ description: |
   Recently, I decided to review and organize my knowledge about Scrum - agile framework to manage projects. I marked 6 points that helped me prepare and pass PSM 1.
 
 photo:
-  source: "/img/blog/professional-scrum-master-by-cloud-engineer.jpg"
+  source: "/images/content/posts/professional-scrum-master-by-cloud-engineer.jpg"
   credits: 'Photo by Ferenc Horvath on Unsplash'
 ---
 I really like the Scrum concept, because it follows with the Continuous Improvement approach which is one of my personal values. This can be used in business, but also by people as an ongoing effort to be better each day.
@@ -33,6 +33,6 @@ I passed with a score of 91%, but it was not easy. Make sure that you feel well 
 
 Usually, I draw mind maps on paper, but this time I wanted to try something new. I tried for the first time an online tool called [Coggle](https://coggle.it/recommend/5e9ad8411aab64689c0e89d5) and I really enjoyed it. I was able to move and reorganize my map all the time. I think it looks great but check on your own.
 
-![Mind Map Professional Scrum Master](/img/blog/professional-scrum-master-mind-map.png)
+![Mind Map Professional Scrum Master](/images/content/posts/professional-scrum-master-mind-map.png)
 
-You can also download it as: [VSDX](/file/professional-scrum-master-mind-map.vsdx) or [PDF](/file/professional-scrum-master-mind-map.pdf).
+You can also download it as: [VSDX](/files/professional-scrum-master-mind-map.vsdx) or [PDF](/files/professional-scrum-master-mind-map.pdf).

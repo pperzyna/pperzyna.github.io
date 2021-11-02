@@ -5,7 +5,7 @@ title: "Kubernetes"
 description: |
 
 photo:
-  source: "/img/open-source/kubernetes.png"
+  source: "/images/content/open-source/kubernetes.png"
   credits: ""
 
 opensource:

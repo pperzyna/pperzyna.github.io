@@ -8,7 +8,7 @@ description: |
 canonical: https://blog.container-solutions.com/kubernetes-operators-explained
 
 photo:
-  source: "/img/blog/kubernetes-operators-explained.jpg"
+  source: "/images/content/posts/kubernetes-operators-explained.jpg"
   credits: 'Photo by Science in HD on Unsplash'
 ---
 
@@ -22,7 +22,7 @@ A controller is a special software that, in the loop, responds to changes and pe
 
 To put it simply, controller loops are the base of controller actions. Imagine there is a non-terminating process (called a reconciliation loop, in Kubernetes) happening over and over again, as in the following illustration:
 
-<content-image src="/img/blog/kubernetes-operators-reconciliation-loop.png" title="Kubernetes Operator Reconciliation Loop"></content-image>
+<content-image src="/images/content/posts/kubernetes-operators-reconciliation-loop.png" title="Kubernetes Operator Reconciliation Loop"></content-image>
 
 This process observes at least one Kubernetes [object](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/#kubernetes-objects), which contains information about the desired state. Objects such as ...
 
@@ -48,7 +48,7 @@ An operator is an application-specific controller. It extends a Kubernetes API t
 
 So far, you know that operators take advantage of controllers that observe Kubernetes objects. These controllers are a bit different because they are tracing custom objects, often called custom resources (CR). CR is an extension of the Kubernetes API that provides a place where you can store and retrieve structured data—the desired state of your application. The whole principle of operation is presented in the diagram below.
 
-<content-image src="/img/blog/kubernetes-operators-controller-loop.png" title="Kubernetes Operator Controller Loop"></content-image>
+<content-image src="/images/content/posts/kubernetes-operators-controller-loop.png" title="Kubernetes Operator Controller Loop"></content-image>
 
 The Operator continuously tracks cluster events relating to a specific type of custom resource. The types of events on these custom resources that can be tracked are:
 
@@ -135,7 +135,7 @@ If you would like to hear more about how to extend Kubernetes, take a look at th
 
 Do you wanna build quickly an operator? Take the benefits from one of Kubernetes Operator Frameworks. Here is an "Awesome" list of all frameworks available on the market:
 
-<content-repository url="https://github.com/pperzyna/awesome-operator-frameworks" title="pperzyna/awesome-operator-frameworks" img="/img/logo/awesome-operator-frameworks.png">
+<content-repository url="https://github.com/pperzyna/awesome-operator-frameworks" title="pperzyna/awesome-operator-frameworks" img="/images/logo/awesome-operator-frameworks.png">
 A curated list of awesome Kubernetes Operator Frameworks
 </content-repository>
 

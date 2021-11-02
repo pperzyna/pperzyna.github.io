@@ -7,7 +7,7 @@ description: |
   At the Cloud Native Warsaw Conference 2019 will be organized workshop about Kubernetes Deployment with Istio - Service Mesh. Together with Marek Ruszczyk, We will be happy to lead that event for you.
 
 photo:
-  source: "/img/workshops/2019-cloud-native-warsaw-conference.png"
+  source: "/images/content/workshops/2019-cloud-native-warsaw-conference.png"
   credits: ""
 
 workshop:

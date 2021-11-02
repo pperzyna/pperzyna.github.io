@@ -6,7 +6,7 @@ title: "What is Linux?"
 description: |
 
 photo:
-  source: "/img/talks/2015-what-is-linux.jpg"
+  source: "/images/content/talks/2015-what-is-linux.jpg"
   credits: ""
 ---
 

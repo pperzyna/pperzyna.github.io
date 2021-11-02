@@ -5,7 +5,7 @@ title: "Locust Exporter"
 description: |
 
 photo:
-  source: "/img/open-source/locust_exporter.png"
+  source: "/images/content/open-source/locust_exporter.png"
   credits: ""
 
 opensource:

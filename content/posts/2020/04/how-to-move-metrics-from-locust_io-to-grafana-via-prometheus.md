@@ -8,7 +8,7 @@ description: |
 canonical: https://blog.container-solutions.com/how-to-move-metrics-from-locust.io-to-grafana-via-prometheus
 
 photo:
-  source: "/img/blog/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
+  source: "/images/content/posts/how-to-move-metrics-from-locust_io-to-grafana-via-prometheus.jpg"
   credits: 'Photo by Mats Speicher on Unsplash'
 ---
 
@@ -32,7 +32,7 @@ cd locust/examples/docker-compose
 docker-compose up -d
 ```
 
-<content-image src="/img/blog/locust-master.png" title="Locust Master"></content-image>
+<content-image src="/images/content/posts/locust-master.png" title="Locust Master"></content-image>
 
 ## 2. Dump stats via Locust Exporter
 
@@ -90,7 +90,7 @@ There is only one thing that you have to add in the /etc/prometheus/prometheus.y
 
 Nowadays, one of the best ways to display metrics is with Grafana. We prepared the following dashboard and shared it publicly on grafana.com. You can import this board by ID [11985](https://grafana.com/grafana/dashboards/11985) or via the [locust_dashboard.json](https://github.com/ContainerSolutions/locust_exporter/blob/master/locust_dashboard.json) file from the repository. In order to do that you can simply go to the Grafana dashboard home page, click on ‘Home’ then ‘Import dashboard’ link, and paste this ID into the ‘Grafana.com Dashboard’ field.
 
-<content-image src="/img/blog/grafana-dashboard-locust-exporter.png" title="Grafana Dashboard for Locust Exporter"></content-image>
+<content-image src="/images/content/posts/grafana-dashboard-locust-exporter.png" title="Grafana Dashboard for Locust Exporter"></content-image>
 
 ## Summary
 

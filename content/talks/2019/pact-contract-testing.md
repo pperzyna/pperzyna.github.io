@@ -6,7 +6,7 @@ title: "Pact - Contract Testing"
 description: |
 
 photo:
-  source: "/img/talks/2019-pact-contract-testing.jpg"
+  source: "/images/content/talks/2019-pact-contract-testing.jpg"
   credits: ""
 ---
 

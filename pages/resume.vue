@@ -14,7 +14,7 @@
           class="has-ratio"
           width="1240"
           height="1754"
-          src="/file/piotr-perzyna-resume.pdf"
+          src="/files/piotr-perzyna-resume.pdf"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen

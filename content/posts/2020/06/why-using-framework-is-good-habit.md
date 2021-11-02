@@ -7,7 +7,7 @@ description: |
   What are 5 benefits that software frameworks can offer you? No matter if it's related to Frontend or Backend development. In both cases profit is obvious!
 
 photo:
-  source: "/img/blog/why-using-framework-is-good-habit.jpg"
+  source: "/images/content/posts/why-using-framework-is-good-habit.jpg"
   credits: 'Photo by pine watt on Unsplash'
 ---
 

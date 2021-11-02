@@ -6,7 +6,7 @@ title: "Helm - Package manager in K8S"
 description: |
 
 photo:
-  source: "/img/talks/2018-helm-package-manager.jpg"
+  source: "/images/content/talks/2018-helm-package-manager.jpg"
   credits: ""
 ---
 

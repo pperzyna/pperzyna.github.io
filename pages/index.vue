@@ -19,7 +19,7 @@
                       fill="#72c89e"
                     ></path></svg
                   ><img
-                    src="/img/logo/piotrperzyna.jpg"
+                    src="/images/logo/piotrperzyna.jpg"
                     alt="Piotr Perzyna"
                     loading="lazy"
                   />

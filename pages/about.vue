@@ -7,7 +7,7 @@
             <div class="column is-2">
               <figure class="image is-square">
                 <img
-                  src="/img/logo/piotrperzyna.jpg"
+                  src="/images/logo/piotrperzyna.jpg"
                   class="is-rounded"
                   loading="lazy"
                   alt="Piotr Perzyna"

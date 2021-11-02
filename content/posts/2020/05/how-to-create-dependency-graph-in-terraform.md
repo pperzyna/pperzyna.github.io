@@ -7,7 +7,7 @@ description: |
   This Terraform feature comes as a Saviour! On a daily basis is not frequently used, but in case of a problem with dependencies can save your time. Terraform Graph command generates a visual representation of dependencies to help you debug easier.
 
 photo:
-  source: "/img/blog/how-to-create-dependency-graph-in-terraform.jpg"
+  source: "/images/content/posts/how-to-create-dependency-graph-in-terraform.jpg"
   credits: 'Photo by Volodymyr Hryshchenko on Unsplash'
 ---
 
@@ -74,4 +74,4 @@ terraform graph | dot -Tsvg > graph.svg
 
 then you will create a graph similar to that one:
 
-![/img/blog/how-to-create-dependency-graph.png](Dependency Graph in Terraform)
+![/images/content/posts/how-to-create-dependency-graph.png](Dependency Graph in Terraform)

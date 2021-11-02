@@ -7,7 +7,7 @@ description: |
   Together with Container Solutions, We are proud to host a FREE workshop for the Cloud Native Community. We will guide a group of 25 participants through the Deployment Strategies in Kubernetes giving a hands on experience with our tutorial."
 
 photo:
-  source: "/img/workshops/2019-kubernetes-deployment-strategies.png"
+  source: "/images/content/workshops/2019-kubernetes-deployment-strategies.png"
   credits: ""
 
 workshop:

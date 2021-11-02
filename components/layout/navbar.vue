@@ -8,7 +8,7 @@
         title="Piotr Perzyna"
       >
         <img
-          src="/img/logo/piotrperzyna.png"
+          src="/images/logo/piotrperzyna.png"
           alt="Piotr Perzyna"
           class="mr-2"
         />

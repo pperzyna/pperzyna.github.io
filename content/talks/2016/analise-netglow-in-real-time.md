@@ -6,7 +6,7 @@ title: "Analise NetFlow in Real Time"
 description: |
 
 photo:
-  source: "/img/talks/2016-analise-netglow-in-real-time.jpg"
+  source: "/images/content/talks/2016-analise-netglow-in-real-time.jpg"
   credits: ""
 ---
 
