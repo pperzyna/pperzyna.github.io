@@ -11,7 +11,7 @@
       <div class="columns mt-4">
         <div class="column is-8">
           <PartialHeader> directly via </PartialHeader>
-          <div class="columns mb-6">
+          <div class="columns mt-4">
             <div class="column">
               <div class="content">
                 <h4>Phone</h4>
@@ -33,9 +33,25 @@
               </div>
             </div>
           </div>
+          <div class="columns mb-6 mt-4">
+            <div class="column">
+              <div class="content">
+                <h4>Pit's Services BV</h4>
+                Korte Lijnbaanssteeg 1 / 4036 <br />
+                1012SL Amsterdam
+              </div>
+            </div>
+            <div class="column">
+              <div class="content">
+                <h4 class="is-hidden-mobile">&nbsp;</h4>
+                KvK: 84660023 <br>
+                VAT: NL863302373B01
+              </div>
+            </div>
+          </div>
 
           <PartialHeader> or send me a message!</PartialHeader>
-          <div class="columns">
+          <div class="columns  mt-4">
             <div class="column">
               <div class="content">
                 <form name="contact" netlify>

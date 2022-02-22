@@ -122,7 +122,7 @@ export default {
   },
 
   robots: {
-    Allow: '/',
+    Allow: ['/', '/_nuxt/icons/'],
     Disallow: ['/_nuxt/', '/*.pdf$'],
     UserAgent: '*',
     Sitemap: ['https://pperzyna.com/sitemap/index.xml'],
