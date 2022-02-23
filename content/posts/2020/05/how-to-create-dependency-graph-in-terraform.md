@@ -42,7 +42,7 @@ resource "aws_instance" "example" {
 
 ## Debugging
 
-The easiest way to get to know which resource is dependent on which one, is to use `terraform graph`. The output from that command will be a visual representation of dependencies in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
+There are multiple solutions to debug a terraform. You can read about all of them in the tutorial: [How to Debug Terraform Projects](https://spacelift.io/blog/terraform-debug), but the easiest way to get to know which resource is dependent on which one is to use `terraform graph`. The output from that command will be a visual representation of dependencies in DOT format, which can be used by [GraphViz](http://www.graphviz.org/) to generate charts.
 
 > Graphviz is open source graph visualization software. Graph visualization is a way of representing structural information as diagrams of abstract graphs and networks.
 
