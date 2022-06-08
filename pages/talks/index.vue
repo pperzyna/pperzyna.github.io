@@ -3,7 +3,7 @@
     <section class="hero is-muted">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">public speeches</h1>
+          <h1 class="title">talks & speeches</h1>
         </div>
       </div>
     </section>

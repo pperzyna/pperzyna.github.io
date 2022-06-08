@@ -15,3 +15,7 @@ The next wave of [Cloud Native Consultants](https://fika.works/)
 [![What is FikaWorks](/images/content/talks/2022-what-is-fikaworks-yt.png)](https://youtu.be/fXk5vrRIb5M)
 
 See on [YouTube](https://youtu.be/fXk5vrRIb5M)
+
+---
+
+It is part of podcast series by [FikaWorks](https://fika.works/).
