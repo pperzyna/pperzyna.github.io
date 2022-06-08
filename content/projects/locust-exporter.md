@@ -8,7 +8,8 @@ photo:
   source: "/images/content/open-source/locust_exporter.png"
   credits: ""
 
-opensource:
+project:
   mine: true
+  opensource: true
   link: "https://github.com/ContainerSolutions/locust_exporter"
 ---

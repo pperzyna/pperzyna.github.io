@@ -8,7 +8,8 @@ photo:
   source: "/images/logo/awesome-operator-frameworks.png"
   credits: ""
 
-opensource:
+project:
   mine: true
+  opensource: true
   link: "https://github.com/pperzyna/awesome-operator-frameworks"
 ---

@@ -34,12 +34,12 @@
           </nuxt-link>
         </div>
         <div class="column is-half-mobile">
-          <nuxt-link to="/open-source/" title="Open-Souce">
+          <nuxt-link to="/projects/" title="Projects">
             <figure class="image px-4">
-              <img src="/images/other/opensource.png" alt="Open-Souce" />
+              <img src="/images/other/opensource.png" alt="Projects" />
             </figure>
           </nuxt-link>
-          <nuxt-link to="/open-source/" title="Open-Souce" class="title is-size-4">
+          <nuxt-link to="/projects/" title="Projects" class="title is-size-4">
             Projects
           </nuxt-link>
         </div>

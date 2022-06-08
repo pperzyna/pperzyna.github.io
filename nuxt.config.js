@@ -93,7 +93,7 @@ export default {
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {
-    nestedProperties: ['workshop.past', 'opensource.mine'],
+    nestedProperties: ['workshop.past', 'project.mine'],
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

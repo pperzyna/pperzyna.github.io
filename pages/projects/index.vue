@@ -3,14 +3,14 @@
     <div class="hero is-muted">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 class="title">open-source projects</h1>
+          <h1 class="title">projects</h1>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="columns mt-4">
         <div class="column is-8">
-          <PartialHeader> started by me </PartialHeader>
+          <PartialHeader> started with me </PartialHeader>
           <div class="columns is-multiline pt-4">
             <div
               v-for="project in started"
@@ -48,12 +48,12 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const started = await $content('open-source', { deep: true })
-      .where({ draft: false, 'opensource.mine': true })
+    const started = await $content('projects', { deep: true })
+      .where({ draft: false, 'project.mine': true })
       .without(['body'])
       .fetch()
-    const supported = await $content('open-source', { deep: true })
-      .where({ draft: false, 'opensource.mine': false })
+    const supported = await $content('projects', { deep: true })
+      .where({ draft: false, 'project.mine': false })
       .sortBy('createdAt', 'desc')
       .without(['body'])
       .fetch()
@@ -71,7 +71,7 @@ export default {
   },
 
   head() {
-    const title = 'Open-Source'
+    const title = 'Projects'
     const description = ''
 
     return {

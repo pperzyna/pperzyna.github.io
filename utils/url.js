@@ -10,7 +10,7 @@ export async function getRoutes(query = ['all']) {
       '/blog/',
       '/talks/',
       '/workshops/',
-      '/open-source/',
+      '/projects/',
     ];
     pages.forEach((x) => { routes.push(x); })
   }

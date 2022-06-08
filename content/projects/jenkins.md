@@ -8,7 +8,8 @@ photo:
   source: "/images/content/open-source/jenkins.png"
   credits: ""
 
-opensource:
+project:
   mine: false
+  opensource: true
   link: "https://github.com/jenkinsci/jenkins"
 ---
