@@ -15,7 +15,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "buefy": "^0.9.19",
-    "core-js": "^3.15.1",
+    "core-js": "^3.27.0",
     "nuxt": "^2.15.7",
     "vue-disqus": "^4.0.1",
     "vue-social-sharing": "^3.0.8"
