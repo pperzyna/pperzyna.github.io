@@ -37,8 +37,8 @@
             <div class="column">
               <div class="content">
                 <h4>Pit's Services BV</h4>
-                Korte Lijnbaanssteeg 1 / 4036 <br />
-                1012SL Amsterdam
+                Papaverweg 34 / B100, 1032KJ Amsterdam <br>
+                <small> Postbus 56907, 1040 AX Amsterdam </small>
               </div>
             </div>
             <div class="column">
